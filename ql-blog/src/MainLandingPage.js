@@ -4,6 +4,6 @@ import Blogs from "./components/blogs/blogs"
 export default () => {
  
   return (
-    <Blogs/>
+    <Blogs searchVisible={true}/>
   );
 };

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import { Container, ContentWithPaddingXl } from "components/misc/Layouts";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
@@ -12,9 +11,23 @@ import agents from "utils/agents"
 import ReactMarkdown from 'react-markdown'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { vs2015 } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+import GetDate from "components/UI/GetDate"
+import {
+    EmailShareButton,
+    FacebookShareButton,
+    InstapaperShareButton,
+    RedditShareButton,
+    TwitterShareButton,
+    WhatsappShareButton,
+    EmailIcon,
+    FacebookIcon,
+    InstapaperIcon,
+    RedditIcon,
+    TwitterIcon,
+    WhatsappIcon,
+} from "react-share";
 
-
-const HeadingRow = tw.div`flex`;
+const HeadingRow = tw.div`flex items-center justify-between`;
 const Heading = tw(SectionHeading)`text-gray-900`;
 const Post = tw.div`cursor-pointer flex flex-col bg-gray-100 rounded-lg`;
 const Image = styled.div`
@@ -29,6 +42,11 @@ const Description = tw.div``;
 
 const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
+const ShareBtns = styled.div`
+    .share-icon{
+        margin-left: 4px;
+    }
+`
 
 const renderers = {
     code: ({ language, value }) => {
@@ -42,6 +60,8 @@ const Blog = () => {
     const [blog, setBlog] = useState()
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(false)
+
+    const shareUrl = window.location.href
 
     useEffect(() => {
         fetchBlog()
@@ -70,14 +90,40 @@ const Blog = () => {
         <AnimationRevealPage disabled>
             <HeadingRow>
                 <Heading>{blog.title}</Heading>
+
+                <ShareBtns>
+                    <FacebookShareButton url={shareUrl} className="share-icon">
+                        <FacebookIcon size={32} round={true} />
+                    </FacebookShareButton>
+                    <TwitterShareButton url={shareUrl} className="share-icon">
+                        <TwitterIcon size={32} round={true} />
+                    </TwitterShareButton>
+
+                    <InstapaperShareButton url={shareUrl} className="share-icon">
+                        <InstapaperIcon size={32} round={true} />
+                    </InstapaperShareButton>
+                    <RedditShareButton url={shareUrl} className="share-icon">
+                        <RedditIcon size={32} round={true} />
+                    </RedditShareButton>
+
+                    <WhatsappShareButton url={shareUrl} className="share-icon">
+                        <WhatsappIcon size={32} round={true} />
+                    </WhatsappShareButton>
+                    <EmailShareButton url={shareUrl} className="share-icon">
+                        <EmailIcon size={32} round={true} />
+                    </EmailShareButton>
+                </ShareBtns>
+
             </HeadingRow>
             <div>
                 <Link to={`/author/${blog.author.id}`}>
-                <Category>@{blog.author.username}</Category>
+                    <Category>@{blog.author.username}</Category>
                 </Link>
-                <CreationDate>{blog.createdAt}</CreationDate>
+                <CreationDate>
+                    <GetDate datetime={blog.createdAt} />
+                </CreationDate>
             </div>
-            <br/>
+            <br />
             <ReactMarkdown renderers={renderers} children={blog.content} />
         </AnimationRevealPage>
     );
