@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "taglines",
+  "info": {
+    "name": "tagline"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "message": {
+      "type": "richtext"
+    }
+  }
+}
