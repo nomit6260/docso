@@ -10,6 +10,22 @@ module.exports = ({ env }) => ({
       {
         model: 'feature-stats',
         singleType: true,
+      },
+      {
+        model: 'features-section',
+        singleType: true,
+      },
+      {
+        model: 'main-features',
+        singleType: true,
+      },
+      {
+        model: 'testimonial',
+        singleType: true,
+      },
+      {
+        model: 'faqs',
+        singleType: true,
       }
     ]
     }
