@@ -124,7 +124,7 @@ const Blog = () => {
                 </CreationDate>
             </div>
             <br />
-            <ReactMarkdown renderers={renderers} children={blog.content} />
+            <ReactMarkdown renderers={renderers} children={blog.content} allowDangerousHtml={true} />
         </AnimationRevealPage>
     );
 };

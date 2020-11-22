@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/feature-stats",
+      "handler": "feature-stats.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/feature-stats",
+      "handler": "feature-stats.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/feature-stats",
+      "handler": "feature-stats.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "landing_sections",
+  "info": {
+    "name": "landing-section"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tagline": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "graphics": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "others": {
+      "type": "richtext"
+    }
+  }
+}

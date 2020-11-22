@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "testimonials",
+  "info": {
+    "name": "testimonial"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "imageRounded": {
+      "type": "boolean"
+    },
+    "imageBorder": {
+      "type": "boolean"
+    },
+    "imageShadow": {
+      "type": "boolean"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "textOnLeft": {
+      "type": "boolean"
+    },
+    "imageRaw": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "testimonials": {
+      "collection": "testimonials-lists"
+    }
+  }
+}

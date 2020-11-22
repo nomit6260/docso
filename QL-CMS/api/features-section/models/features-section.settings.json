@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "features_sections",
+  "info": {
+    "name": "features-section",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "cards": {
+      "collection": "features"
+    }
+  }
+}

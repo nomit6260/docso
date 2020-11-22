@@ -1,0 +1,68 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_features",
+  "info": {
+    "name": "main-features",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subheading": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "primaryButtonText": {
+      "type": "string"
+    },
+    "primaryButtonUrl": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "buttonRounded": {
+      "type": "boolean"
+    },
+    "imageRounded": {
+      "type": "boolean"
+    },
+    "imageBorder": {
+      "type": "boolean"
+    },
+    "imageShadow": {
+      "type": "boolean"
+    },
+    "showDecoratorBlob": {
+      "type": "boolean"
+    },
+    "textOnLeft": {
+      "type": "boolean"
+    },
+    "iconRoundedFull": {
+      "type": "boolean"
+    },
+    "iconFilled": {
+      "type": "boolean"
+    },
+    "features": {
+      "collection": "main-features-list"
+    }
+  }
+}

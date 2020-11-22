@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testimonials_lists",
+  "info": {
+    "name": "testimonials_lists"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "stars": {
+      "type": "integer"
+    },
+    "profileImageRaw": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "heading": {
+      "type": "string"
+    },
+    "quote": {
+      "type": "richtext"
+    },
+    "customerName": {
+      "type": "string"
+    },
+    "customerTitle": {
+      "type": "string"
+    }
+  }
+}

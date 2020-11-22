@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "feature_stats",
+  "info": {
+    "name": "feature-stats"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subheading": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "stats": {
+      "type": "json",
+      "required": true
+    }
+  }
+}
