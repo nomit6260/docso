@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 import { QuartileLogoWhite } from "assets/icons"
 import NavbarLinks from "./NavbarLinks";
 import { withRouter } from "react-router-dom"
@@ -32,7 +32,8 @@ const Navbar = () => {
         {/* <div onClick={this.toggle}>
             <SVGicon className="navicon" name="nav" />
           </div> */}
-        <QuartileLogoWhite className="QuartileLogo" />
+          <Link to="/"><QuartileLogoWhite className="QuartileLogo"/></Link>
+        
         {/* <h2>Quartile</h2> */}
         <NavbarLinks />
       </Nav>
