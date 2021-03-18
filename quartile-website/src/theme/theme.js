@@ -55,6 +55,7 @@ export const theme = {
   shadow3: "3px 3px 3px 0px rgba(0, 0, 0, 0.09)",
   shadow4: "0 2px 2px #ddd",
   shadow5: "0 1px 2px rgba(0,0,0,0.07)",
+  cardShadow: "0px 3px 3px 2px rgba(0,0,0,0.1)",
 
   breakPoint1: "129.188em",
   breakPoint2: "113.688em",

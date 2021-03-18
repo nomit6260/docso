@@ -2,6 +2,10 @@ import React from 'react'
 import styled from "styled-components"
 import { GreenBtn, YellowBtn } from "styles/Buttons"
 import Carousel from "components/Carousel/CarouselNauka"
+import { MakeInIndiaLogo, DigitalIndiaLogo, AatmaNirbharBharatLogo } from "assets/icons"
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Card, CardHeading } from "components/Cards/Card"
+import { BsLock, BsCheckCircle, BsLayers, BsArrowsFullscreen } from 'react-icons/bs';
 
 function HomeComponent() {
     return (
@@ -25,6 +29,100 @@ function HomeComponent() {
                     ]}
             />
 
+            <div className="solutions">
+                <Heading>Explore Our Solutions</Heading>
+                <Tabs className="tabs" selectedTabClassName="selected-tab">
+                    <TabList className="tab-list">
+                        <Tab>Industry</Tab>
+                        <Tab>Technology Category</Tab>
+                    </TabList>
+
+                    <TabPanel className="center" >
+                        <div className="grid selectDisable center">
+                            <Card>
+                                <CardHeading className="link">
+                                    Media and Entertainment
+                                </CardHeading>
+                            </Card>
+                            <Card>
+                                <CardHeading>
+                                    Healthcare and Life Science
+                                </CardHeading>
+                            </Card>
+                            <Card>
+                                <CardHeading>
+                                    Advertisement and Marketing
+                                </CardHeading>
+                            </Card>
+
+                        </div>
+                    </TabPanel>
+                    <TabPanel>
+                        <div className="grid selectDisable center">
+                            <Card>
+                                <CardHeading className="link">
+                                    Machine Learning
+                                </CardHeading>
+                            </Card>
+                            <Card>
+                                <CardHeading>
+                                    Product Development
+                                </CardHeading>
+                            </Card>
+                            <Card>
+                                <CardHeading>
+                                    Internet of Things
+                                </CardHeading>
+                            </Card>
+
+                        </div>
+                    </TabPanel>
+                </Tabs>
+            </div>
+
+            <div className="feature">
+                <Heading>Engineered for the Most Demanding Requirements</Heading>
+                <div className="grid-feature selectDisable center">
+                    <div>
+                        <BsLock className="icon" />
+                        <h1>
+                            Secure
+                        </h1>
+                        <h2>
+                            Comprehensive security capabilities to satisfy the most demanding requirements.
+                        </h2>
+                    </div>
+                    <div>
+                        <BsCheckCircle className="icon" />
+                        <h1>
+                            Compliant
+                        </h1>
+                        <h2>
+                            Rich controls, auditing and broad security accreditations.
+                        </h2>
+                    </div>
+                    <div>
+                        <BsLayers className="icon" />
+                        <h1>
+                            Hybrid
+                        </h1>
+                        <h2>
+                            Build hybrid architectures that extend your on-premises infrastructure to the Cloud.
+                        </h2>
+                    </div>
+                    <div>
+                        <BsArrowsFullscreen className="icon" />
+                        <h1>
+                            Scalable
+                        </h1>
+                        <h2>
+                            Access as much or as little as you need, and scale up and down as required with only a few minutes notice.
+                        </h2>
+                    </div>
+
+                </div>
+            </div>
+
             <div className="blogs">
                 <Heading>Blogs</Heading>
                 <h3>
@@ -32,11 +130,16 @@ function HomeComponent() {
                 </h3>
             </div>
 
-            <div className="initiatives">
+            <div className="initiatives selectDisable">
                 <Heading>Initiatives</Heading>
                 <h3>
                     We are commited towards Digital Economy and AatmaNirbhar Bharat
                 </h3>
+                <div className="initiatives-img ">
+                    <DigitalIndiaLogo />
+                    <MakeInIndiaLogo />
+                    <AatmaNirbharBharatLogo />
+                </div>
             </div>
 
             <div className="final-message">
@@ -54,6 +157,11 @@ export default HomeComponent
 
 const Container = styled.div`
     padding-top: 5rem;
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .slide-1{
         display: flex;
         flex-direction: column;
@@ -61,6 +169,7 @@ const Container = styled.div`
         align-items: center;
         margin-top: 5rem;
     }
+    .solutions,
     .initiatives{
         // height: 300px;
         padding: 30px;
@@ -78,7 +187,52 @@ const Container = styled.div`
             font-size: 20px;
             margin: 2rem;
         }
+
+        .initiatives-img{
+            display: flex;
+            img{
+                height: 15%;
+                width: 15%;
+            }
+            align-items: center;
+            justify-content: space-evenly;
+        }
     }
+
+    .tabs{
+        font-size: 16px;
+        .selected-tab{
+            border: none;
+            color: ${props => props.theme.success};
+        }
+
+        .tab-list{
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            li{
+                margin: 10px;
+            }
+        }
+    }
+
+    .selectDisable {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+    
+    .selectEnable { 
+        -webkit-user-select: text;
+        -khtml-user-select: text;
+        -moz-user-select: text;
+        -o-user-select: text;
+        user-select: text;
+    }
+    
     .blogs{
         display: flex;
         flex-direction: column;
@@ -98,6 +252,7 @@ const Container = styled.div`
         }
     }
     }
+    .feature,
     .final-message,
     .landing{
         height: 300px;
@@ -123,11 +278,47 @@ const Container = styled.div`
     .btn-1{
         margin-top: 2rem;
     }
+
+    .grid{
+        display: inline-flex;
+        flex-wrap: wrap;
+        div {
+            margin: 10px;
+            min-height: 250px;
+            min-width: 250px;
+            &:hover{
+                .link{color: ${props => props.theme.success};}
+                transition: color 0.3s;
+            }
+        }
+    }
+
+    .feature{
+        text-align: center;
+        height: 100%;
+
+        .grid-feature{
+            @media (max-width: ${props => props.theme.breakPoint11}) {
+                flex-direction: column;
+            }
+            div{
+                margin: 3rem;
+                margin-top: 5rem;
+
+            }
+        }
+        h1{
+            color: ${props => props.theme.white};
+        }
+    }
+
+    .icon{
+        font-size: 30px;
+    }
 `
 
 const Heading = styled.p`
     font-size: 30px;
     color: ${props => props.theme.white};
 `
-
 

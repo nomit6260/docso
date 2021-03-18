@@ -32,6 +32,7 @@ export default Carousel
 
 const Container = styled.div`
     position: relative;
+    border: none;
     .dot-grp{
         position: absolute;
         font-size: 15px;
