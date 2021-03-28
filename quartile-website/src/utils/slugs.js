@@ -1,3 +1,10 @@
 export default {
-    home: '/'
+    home: '/',
+    whyus: '/whyus',
+    contactus: '/contactus',
+    team: '/team',
+    careers: '/careers',
+    jobapplication: '/jobapplication',
+    jobdesc:'/jobdesc',
+    aboutus: '/aboutus',
 }
