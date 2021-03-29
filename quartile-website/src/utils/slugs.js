@@ -6,4 +6,5 @@ export default {
     careers: '/careers',
     jobapplication: '/jobapplication',
     jobdesc:'/jobdesc',
+    aboutus: '/aboutus',
 }
