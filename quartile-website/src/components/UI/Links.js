@@ -6,7 +6,7 @@ const Links = () => {
     return (
         <Container>
             <div>
-                <h2>Teams</h2>
+                <h2> <Link to="/team">Teams</Link></h2>
                 <ul>
                     <li>
                         <Link to="/teams/data-team">Data Team</Link>
@@ -77,7 +77,7 @@ const Links = () => {
                         <Link to="/careers">Careers</Link>
                     </li>
                     <li>
-                        <Link to="/contact">Contact Us</Link>
+                        <Link to="/contactus">Contact Us</Link>
                     </li>
                 </ul>
             </div>
