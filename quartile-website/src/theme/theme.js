@@ -19,7 +19,7 @@ export const theme = {
   gray8: "#e1e4e8",
   gray9: "#f4f4f4",
   white: "#ffffff",
-
+  black: "#000000",
   gray12: "#999",
   gray13: "#777", //⚠️
   gray14: "#aaaaaa",
