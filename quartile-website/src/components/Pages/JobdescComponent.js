@@ -11,15 +11,6 @@ function JobdescComponent() {
                 <h5 className="jobid">Job ID: | Quartile Technologies Inc.</h5>
                 <button>Apply Now</button>
             </div>
-            <div style={{paddingLeft:"30px"}}>
-            <h1 className="deschead">DESCRIPTION</h1>
-            <p className="desc">job Description</p><br/><br/>
-
-            <h1 className="deschead">BASIC QUALIFICATION</h1>
-            <p className="desc">basic QUALIFICATION Description</p><br/><br/>
-
-            <h1 className="deschead">PREFERED QUALIFICATION</h1>
-            <p className="desc">PREFERED QUALIFICATION DESCRIPTION</p><br/><br/>
 
             <span className="table">
             <h1 style={{color:"#1eab94"}}>Job Details</h1>
@@ -28,7 +19,7 @@ function JobdescComponent() {
            <tr><img src="https://res.cloudinary.com/nomit/image/upload/v1616679307/QuartileLabs/icons8-location-64_fp7lf2.png"></img>Engineering Team</tr>
             <tr><img src="https://res.cloudinary.com/nomit/image/upload/v1616679307/QuartileLabs/icons8-location-64_fp7lf2.png"></img>Software Development </tr>
            </table>
-           </span>
+           </span><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
            <span className="socialicon">
                <h1 style={{color:"#1eab94"}}>Share this job</h1>
@@ -41,6 +32,19 @@ function JobdescComponent() {
                    </tr>
                </table>
            </span>
+
+
+            <div style={{paddingLeft:"30px"}}>
+            <h1 className="deschead" style={{marginTop:"-150px"}}>DESCRIPTION</h1>
+            <p className="desc">job Description</p><br/><br/>
+
+            <h1 className="deschead">BASIC QUALIFICATION</h1>
+            <p className="desc">basic QUALIFICATION Description</p><br/><br/>
+
+            <h1 className="deschead">PREFERED QUALIFICATION</h1>
+            <p className="desc">PREFERED QUALIFICATION DESCRIPTION</p><br/><br/>
+
+           
 
             </div>
 
@@ -59,19 +63,18 @@ const Container = styled.div`
         padding:15px;
         padding-left:30px;
     }
-    .table{
-       
-        position:absolute;
-        right:10%;
-        top:30%;
-        
-    }
-    .socialicon{
-        position:absolute;
-        right:14.5%;
-        top:55%;
-        width:10%;
+   .socialicon{
+        padding-right:100px;
+       width:auto;
+       float:right;
 
+    }
+    .table{
+        padding-right:50px;
+       width:auto;
+       float:right;
+       
+        
     }
     table{
         padding:5px;
