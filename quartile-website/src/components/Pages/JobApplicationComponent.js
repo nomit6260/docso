@@ -26,47 +26,49 @@ function JobApplicationComponent() {
                 <div className="vl" />
 
                 <TabPanel>
-                    <h2 style={{ textAlign: "left", padding: "10px", fontSize: "2rem", color: "black" }}>
+                    <h2 className="tabhead">
                         Resume</h2>
                 </TabPanel>
 
                 <TabPanel className="form">
                     <div className="grid selectDisable">
-                        <h2 className="center" style={{ textAlign: "left", padding: "10px", fontSize: "2rem", color: "black", justifyContent: "space-between" }}>Contact Information
-                            <h6><b style={{ color: "red", textAlign: "right" }}>*</b> Required Field</h6>
+                        <h2 className="tabhead" >Contact Information
+                            <h6 style={{float:"right"}}><b style={{ color: "red",}}>*</b> Required Field</h6>
                         </h2>
+
+
                         <form style={{ padding: "10px" }}>
 
                             <div style={{ display: "flex", }}>
                                 <lable className="lable1" >First Name<b style={{ color: "red" }}>*</b>
-                                    <input type="text" />
+                                    <input type="text" name="fname" />
                                 </lable>
                                 <lable className="lable2">Last Name<b style={{ color: "red" }}>*</b>
-                                    <input type="text" />
+                                    <input type="text" name="lname" />
                                 </lable><br /><br /><br />
                             </div>
 
 
                             <div style={{ display: "flex" }} >
                                 <lable className="lable1">Email Address<b style={{ color: "red" }}>*</b>
-                                    <input type="text" />
+                                    <input type="text" name="email"/>
                                 </lable>
                                 <lable className="lable2" >Phone Number<b style={{ color: "red" }}>*</b>
-                                    <input type="text" />
+                                    <input type="text" name="phn" />
                                 </lable><br /><br /><br />
                             </div>
 
                             <div>
                                 <lable>Address Line<b style={{ color: "red" }}>*</b></lable><br />
-                                <input type="text" /><br /><br />
+                                <input type="text" name="address"/><br /><br />
                             </div>
 
                             <div style={{ display: "flex", }}>
                                 <lable className="lable1" >City<b style={{ color: "red" }}>*</b>
-                                    <input type="text" />
+                                    <input type="text" name="city" />
                                 </lable>
                                 <lable className="lable2" >Postal/Zip Code<b style={{ color: "red" }}>*</b>
-                                    <input type="text" />
+                                    <input type="text" name="zip" />
                                 </lable><br /><br /><br />
                             </div>
 
@@ -97,7 +99,7 @@ function JobApplicationComponent() {
                 </TabPanel>
 
                 <TabPanel  >
-                    <h2 style={{ textAlign: "left", padding: "10px", fontSize: "2rem", textDecoration: "underline black", color: "black" }}>
+                    <h2 className="tabhead">
                         Education</h2>
                     <div className="grid selectDisable center">
 
@@ -107,7 +109,7 @@ function JobApplicationComponent() {
                 </TabPanel>
 
                 <TabPanel  >
-                    <h2 style={{ textAlign: "left", padding: "10px", fontSize: "2rem", textDecoration: "underline black", color: "black" }}>
+                    <h2 className="tabhead">
                         Job-specific questions</h2>
                     <div className="grid selectDisable center">
 
@@ -117,7 +119,7 @@ function JobApplicationComponent() {
                 </TabPanel>
 
                 <TabPanel  >
-                    <h2 style={{ textAlign: "left", padding: "10px", fontSize: "2rem", textDecoration: "underline black", color: "black" }}>
+                    <h2 className="tabhead">
                         Acknowledgement</h2>
                     <div className="grid selectDisable center">
 
@@ -127,7 +129,7 @@ function JobApplicationComponent() {
                 </TabPanel>
 
                 <TabPanel  >
-                    <h2 style={{ textAlign: "left", padding: "10px", fontSize: "2rem", textDecoration: "underline black", color: "black" }}>
+                    <h2 className="tabhead">
                         Self-Identification</h2>
                     <div className="grid selectDisable center">
 
@@ -137,7 +139,7 @@ function JobApplicationComponent() {
                 </TabPanel>
 
                 <TabPanel  >
-                    <h2 style={{ textAlign: "left", padding: "10px", fontSize: "2rem", textDecoration: "underline black", color: "black" }}>
+                    <h2 className="tabhead">
                         Review and Submit</h2>
                     <div className="grid selectDisable center">
 
@@ -159,6 +161,13 @@ const Container = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .tabhead{
+        text-align: left;
+        padding: 10px;
+        font-size: 2rem;
+        text-decoration: underline black;
+        color: black; 
     }
     .lable2{
         margin-left:50px;
