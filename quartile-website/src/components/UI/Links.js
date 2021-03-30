@@ -71,7 +71,7 @@ const Links = () => {
                 <h2>Company</h2>
                 <ul>
                     <li>
-                        <Link to="/about">About Us</Link>
+                        <Link to="/aboutus">About Us</Link>
                     </li>
                     <li>
                         <Link to="/careers">Careers</Link>
