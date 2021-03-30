@@ -38,18 +38,20 @@ function JobApplicationComponent() {
                         <form style={{ padding: "10px" }}>
 
                             <div style={{ display: "flex", }}>
-                                <lable style={{ width: "48%" }}>First Name<b style={{ color: "red" }}>*</b>
+                                <lable className="lable1" >First Name<b style={{ color: "red" }}>*</b>
                                     <input type="text" />
                                 </lable>
-                                <lable style={{ marginLeft: "50px", width: "50%" }}>Last Name<b style={{ color: "red" }}>*</b>
+                                <lable className="lable2">Last Name<b style={{ color: "red" }}>*</b>
                                     <input type="text" />
                                 </lable><br /><br /><br />
                             </div>
+
+
                             <div style={{ display: "flex" }} >
-                                <lable>Email Address<b style={{ color: "red" }}>*</b>
+                                <lable className="lable1">Email Address<b style={{ color: "red" }}>*</b>
                                     <input type="text" />
                                 </lable>
-                                <lable style={{ marginLeft: "50px" }}>Phone Number<b style={{ color: "red" }}>*</b>
+                                <lable className="lable2" >Phone Number<b style={{ color: "red" }}>*</b>
                                     <input type="text" />
                                 </lable><br /><br /><br />
                             </div>
@@ -60,16 +62,16 @@ function JobApplicationComponent() {
                             </div>
 
                             <div style={{ display: "flex", }}>
-                                <lable style={{ width: "50%" }}>City<b style={{ color: "red" }}>*</b>
+                                <lable className="lable1" >City<b style={{ color: "red" }}>*</b>
                                     <input type="text" />
                                 </lable>
-                                <lable style={{ marginLeft: "50px", width: "50%" }}>Postal/Zip Code<b style={{ color: "red" }}>*</b>
+                                <lable className="lable2" >Postal/Zip Code<b style={{ color: "red" }}>*</b>
                                     <input type="text" />
                                 </lable><br /><br /><br />
                             </div>
 
                             <div style={{ display: "flex" }}>
-                                <lable style={{ width: "50%" }}>Country/Region<b style={{ color: "red" }}>*</b><br />
+                                <lable className="lable1" >Country/Region<b style={{ color: "red" }}>*</b><br />
                                     <select>
                                         <option disabled>Choose your Country/Region</option>
                                         <option></option>
@@ -77,7 +79,7 @@ function JobApplicationComponent() {
                                         <option></option>
                                     </select>
                                 </lable>
-                                <lable style={{ marginLeft: "50px", width: "50%" }}>State<b style={{ color: "red" }}>*</b><br />
+                                <lable className="lable2" >State<b style={{ color: "red" }}>*</b><br />
                                     <select>
                                         <option disabled>Choose your State</option>
                                         <option></option>
@@ -158,6 +160,13 @@ const Container = styled.div`
         justify-content: center;
         align-items: center;
     }
+    .lable2{
+        margin-left:50px;
+        width:50%;
+    }
+    .lable1{
+        width:50%
+    }
     .head{
     background-color:#313956;
     font-size:2.5rem;
@@ -178,9 +187,7 @@ const Container = styled.div`
                 cursor:pointer; 
             }
         }
-
     }
-
     select{
         height:30px;
         width:310px;
@@ -189,7 +196,6 @@ const Container = styled.div`
         height:30px;
         width:100%;
     }
-
     .vl {
         margin: 5rem;
         margin-top: 5rem;
