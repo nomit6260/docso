@@ -36,33 +36,15 @@ function CareerComponent() {
             <div style={{backgroundColor:"#f7faff", padding:"5rem"}}>
                     <b style={{color:"#1eab94", fontSize:"1.5rem"}}>Filter</b>
                     <b style={{color:"#1eab94", fontSize:"1.5rem", marginLeft:"40rem"}}>Showing </b>
-                    <label>Sort by:</label>
-                    <select >
-                    <option>Most Relevant</option>
+                    <label>Sort by:
+                    <select style={{float:"right"}} >
+                    <option >Most Relevant</option>
                     <option>Option2</option>
                     <option>Option3</option>
                     </select>
+                    </label>
                     <span ><br/><br/>
 
-                        <table>
-                            <b><th>Job Type</th></b>
-                            <tr>Part Time <input style={{marginLeft:"140px"}} className="checkbox" type="checkbox"/></tr>
-                            <tr>Full Time <input style={{marginLeft:"142px"}} className="checkbox" type="checkbox"/></tr>
-                        </table><br/>
-                        
-                        <table>
-                            <b><th>Job Category</th></b>
-                            <tr>Software Engineer <input style={{marginLeft:"76px"}} className="checkbox" type="checkbox"/></tr>
-                            <tr>Web Developer <input style={{marginLeft:"100px"}} className="checkbox" type="checkbox"/></tr>
-                            <tr>Graphics Designer <input style={{marginLeft:"75px"}} className="checkbox" type="checkbox"/></tr>
-                        </table><br/>
-                        <table>
-                            <b><th>Job Location</th></b>
-                            <tr>Bhilai, CG, IN <input style={{marginLeft:"114px"}} className="checkbox"  type="checkbox"/></tr>
-                            <tr>Remote <input style={{marginLeft:"153px"}} className="checkbox"  type="checkbox"/></tr>
-                        </table>
-                    </span><br/><br/><br/><br/>
-                       
                     <span >
                     <Link  to="/jobdesc">
                             <Card className="cardCom">
@@ -74,9 +56,33 @@ function CareerComponent() {
                                 <p className="jobdesc">Job Description</p>
                                 <Link to="/jobapplication"><button>Apply Now</button></Link>
                             </Card>
-                        </Link><br/>
+                        </Link>
                         
                     </span>
+                    
+                    
+                    
+
+                        <table>
+                            <b><th>Job Type</th></b>
+                            <tr>Part Time <input className="checkbox" type="checkbox"/></tr>
+                            <tr>Full Time <input  className="checkbox" type="checkbox"/></tr>
+                        </table><br/>
+                        
+                        <table>
+                            <b><th>Job Category</th></b>
+                            <tr>Software Engineer <input  className="checkbox" type="checkbox"/></tr>
+                            <tr>Web Developer <input  className="checkbox" type="checkbox"/></tr>
+                            <tr>Graphics Designer <input  className="checkbox" type="checkbox"/></tr>
+                        </table><br/>
+                        <table>
+                            <b><th>Job Location</th></b>
+                            <tr>Bhilai, CG, IN <input  className="checkbox"  type="checkbox"/></tr>
+                            <tr>Remote <input  className="checkbox"  type="checkbox"/></tr>
+                        </table>
+                    </span><br/><br/><br/><br/>
+                       
+                   
             </div>
 
         </Container>
@@ -97,6 +103,8 @@ const Container = styled.div`
     .cardCom{
         padding:10px;
         background-color:#ffffff;
+        width:75%;
+        float:right;
     }
     button{
         
@@ -122,7 +130,7 @@ const Container = styled.div`
     label{
         color:#1eab94;
         font-size:1.5rem;
-        margin-left:500px;
+       float:right;
     }
     th{
         color:black;
@@ -147,17 +155,12 @@ const Container = styled.div`
         text-align:left;
     }
     .checkbox{
-        margin-right:-75%;
+        
+        float:right;
         width:18px;
         height:18px;
-        margin-top:5px;
-        background-color:#ffffff;
-    }
-    .checkbox:hover{
-        background-color:#ccc;
-    }
-    .input:checked{
-        background-color:red;
+        margin-top:3px;
+        margin-right:20px;
     }
     
     .grid{
