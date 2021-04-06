@@ -7,13 +7,7 @@ import Subscribe from "components/UI/Subscribe"
 const Footer = () => {
     return (
         <FooterContainer className="container">
-            <div className="pads">
-                <QuartileFooter />
-                <Row>
-                    <Links />
-                    <Subscribe />
-                </Row>
-            </div>
+            
             <CopyRight>
                 <div className="legal">
                     <h3 className="ml">Terms of Services</h3>
