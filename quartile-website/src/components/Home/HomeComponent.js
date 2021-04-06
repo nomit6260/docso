@@ -10,145 +10,7 @@ import { BsLock, BsCheckCircle, BsLayers, BsArrowsFullscreen } from 'react-icons
 function HomeComponent() {
     return (
         <Container>
-            <div className="landing">
-                <Heading>Start Building with Quartile Today</Heading>
-                <h3>
-                    Whether you're looking for compute power, database storage, content delivery, or other functionality, Quartile has the services to help you build sophisticated applications with increased flexibility, scalability and reliability
-                </h3>
-                <GreenBtn className="btn-1">Get started for free</GreenBtn>
-            </div>
-            <Carousel
-                elements={
-                    [
-                        <div className="slide-1">
-                            <h1 style={{ textAlign: "center", marginTop: "2rem", fontSize: "35px" }}>Introducing Quartile Cloud Platform</h1>
-                            <h2 style={{ textAlign: "center", marginTop: "5px", fontSize: "20px" }}>Experience the industry leading cloud service</h2>
-                            <YellowBtn style={{ textAlign: "center", marginTop: "5rem" }} className="btn-1">Explore Now</YellowBtn>
-                        </div>,
-
-                    ]}
-            />
-
-            <div className="solutions">
-                <Heading>Explore Our Solutions</Heading>
-                <Tabs className="tabs" selectedTabClassName="selected-tab">
-                    <TabList className="tab-list">
-                        <Tab>Industry</Tab>
-                        <Tab>Technology Category</Tab>
-                    </TabList>
-
-                    <TabPanel className="center" >
-                        <div className="grid selectDisable center">
-                            <Card>
-                                <CardHeading className="link">
-                                    Media and Entertainment
-                                </CardHeading>
-                            </Card>
-                            <Card>
-                                <CardHeading>
-                                    Healthcare and Life Science
-                                </CardHeading>
-                            </Card>
-                            <Card>
-                                <CardHeading>
-                                    Advertisement and Marketing
-                                </CardHeading>
-                            </Card>
-
-                        </div>
-                    </TabPanel>
-                    <TabPanel>
-                        <div className="grid selectDisable center">
-                            <Card>
-                                <CardHeading className="link">
-                                    Machine Learning
-                                </CardHeading>
-                            </Card>
-                            <Card>
-                                <CardHeading>
-                                    Product Development
-                                </CardHeading>
-                            </Card>
-                            <Card>
-                                <CardHeading>
-                                    Internet of Things
-                                </CardHeading>
-                            </Card>
-
-                        </div>
-                    </TabPanel>
-                </Tabs>
-            </div>
-
-            <div className="feature">
-                <Heading>Engineered for the Most Demanding Requirements</Heading>
-                <div className="grid-feature selectDisable center">
-                    <div>
-                        <BsLock className="icon" />
-                        <h1>
-                            Secure
-                        </h1>
-                        <h2>
-                            Comprehensive security capabilities to satisfy the most demanding requirements.
-                        </h2>
-                    </div>
-                    <div>
-                        <BsCheckCircle className="icon" />
-                        <h1>
-                            Compliant
-                        </h1>
-                        <h2>
-                            Rich controls, auditing and broad security accreditations.
-                        </h2>
-                    </div>
-                    <div>
-                        <BsLayers className="icon" />
-                        <h1>
-                            Hybrid
-                        </h1>
-                        <h2>
-                            Build hybrid architectures that extend your on-premises infrastructure to the Cloud.
-                        </h2>
-                    </div>
-                    <div>
-                        <BsArrowsFullscreen className="icon" />
-                        <h1>
-                            Scalable
-                        </h1>
-                        <h2>
-                            Access as much or as little as you need, and scale up and down as required with only a few minutes notice.
-                        </h2>
-                    </div>
-
-                </div>
-            </div>
-
-            <div className="blogs">
-                <Heading>Blogs</Heading>
-                <h3>
-                    Understand the engineering under the hood.
-                </h3>
-            </div>
-
-            <div className="initiatives selectDisable">
-                <Heading>Initiatives</Heading>
-                <h3>
-                    We are commited towards Digital Economy and AatmaNirbhar Bharat
-                </h3>
-                <div className="initiatives-img ">
-                    <DigitalIndiaLogo />
-                    <MakeInIndiaLogo />
-                    <AatmaNirbharBharatLogo />
-                </div>
-            </div>
-
-            <div className="final-message">
-                <Heading>Ready to Get Started</Heading>
-                <h3>
-                    Whether you're looking for compute power, database storage, content delivery, or other functionality, Quartile has the services to help you build sophisticated applications with increased flexibility, scalability and reliability
-                </h3>
-                <YellowBtn className="btn-1">Request Demo</YellowBtn>
-            </div>
+            Home
         </Container>
     )
 }
@@ -156,7 +18,7 @@ function HomeComponent() {
 export default HomeComponent
 
 const Container = styled.div`
-    padding-top: 5rem;
+    padding-top: 8rem;
     .center{
         display: flex;
         justify-content: center;
