@@ -1,38 +1,41 @@
 // import QuartileLogo from "./QuartileLogo"
-import whiteLogo from'./logo_full.png';
-import blueLogo from'./logo_full_primary.png';
-import makeInIndia from'./Make_in_India.png';
-import digitalIndia from'./digital_India.png';
-import aatmaNirbharBharat from'./aatmanirbhar_bharat.jpeg';
+import whiteLogo from'./logo_full_svg.svg';
+import calenderLogo from'./297443.png';
+import phoneLogo from'./724664.png';
+import clockLogo from'./862358.png';
+import bellLogo from'./1182718.png';
 import NextIcon from "./next"
 import BackIcon from "./back"
 
 const QuartileLogoWhite = (props) => (
-    <img src={whiteLogo} alt={"Quartile Logo White"} draggable="false" {...props}></img>
+    <img src={whiteLogo} alt={"Docso Logo Blue"} draggable="false" {...props} style={{color: "white"}}></img>
 )
 
-const QuartileLogoPrimary = (props) => (
-    <img src={blueLogo} alt={"Quartile Logo Primary"} draggable="false" {...props}></img>
+const CalenderLogo = (props) => (
+    <img src={calenderLogo} alt={"Calender Logo"} draggable="false" {...props} style={{color: "white"}}></img>
 )
 
-const MakeInIndiaLogo = (props) => (
-    <img src={makeInIndia} alt={"Make In India Logo"} draggable="false" {...props}></img>
+const PhoneLogo = (props) => (
+    <img src={phoneLogo} alt={"Phone Logo"} draggable="false" {...props} style={{color: "white"}}></img>
 )
 
-const DigitalIndiaLogo = (props) => (
-    <img src={digitalIndia} alt={"Digital India Logo"} draggable="false" {...props}></img>
+const ClockLogo = (props) => (
+    <img src={clockLogo} alt={"Clock Logo"} draggable="false" {...props} style={{color: "white"}}></img>
 )
 
-const AatmaNirbharBharatLogo = (props) => (
-    <img src={aatmaNirbharBharat} alt={"Aatma Nirbhar Bharat Logo"} draggable="false" {...props}></img>
+const BellLogo = (props) => (
+    <img src={bellLogo} alt={"bell Logo"} draggable="false" {...props} style={{color: "white"}}></img>
 )
+
+
 
 export {
     QuartileLogoWhite,
-    QuartileLogoPrimary,
+    CalenderLogo,
+    PhoneLogo,
+    ClockLogo,
+    BellLogo,
     NextIcon,
     BackIcon,
-    MakeInIndiaLogo,
-    DigitalIndiaLogo,
-    AatmaNirbharBharatLogo
+    
 };

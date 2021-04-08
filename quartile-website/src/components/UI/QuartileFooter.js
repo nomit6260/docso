@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import {QuartileLogoPrimary} from "assets/icons"
 
 
 const QuartileFooter = () => {
   return (
     <Container>
-      <QuartileLogoPrimary className="QuartileLogo" />
     </Container>
   );
 };

@@ -8,6 +8,7 @@ import Footer from "components/Footer/Footer"
 
 const HomeComponent = lazy(() => import('components/Home/HomeComponent'));
 const ContactUsComponent = lazy(() => import('components/Pages/ContactUsComponent'));
+const AdvantageComponent = lazy(() => import('components/Pages/AdvantageComponent'));
 
 
 export const Root = ({ theme }) => (
@@ -17,6 +18,7 @@ export const Root = ({ theme }) => (
       <Switch>
         <Route exact path={SLUGS.home} component={HomeComponent} />
         <Route exact path={SLUGS.contactus} component={ContactUsComponent} />
+        <Route exact path={SLUGS.advantage} component={AdvantageComponent} />
         <Redirect to={SLUGS.home} />
       </Switch>
     </Suspense>

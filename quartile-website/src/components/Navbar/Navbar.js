@@ -148,8 +148,9 @@ const Nav = styled.nav`
     }
   }
   .QuartileLogo {
+    filter: brightness(0) invert(1);
     height: 38px;
-    width: 129.5px;
+    width: 100px;
     // transform: rotate(-1.5deg);
   }
   .links {

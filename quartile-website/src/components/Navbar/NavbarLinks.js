@@ -18,11 +18,6 @@ const NavbarLinks = () => {
       <li>
         <Link to="/contactus">Contact Us</Link>
       </li>
-      <li>
-        <Link to="/contact">
-            <GreenBtn>Create an Account</GreenBtn>
-        </Link>
-      </li>
     </Links>
   );
 };
