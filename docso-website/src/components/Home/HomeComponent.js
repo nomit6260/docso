@@ -12,8 +12,7 @@ import Img1 from "components/ScreenShot/home.png"
 import Img2 from "components/ScreenShot/drawer.png"
 import Img3 from "components/ScreenShot/book.png"
 import Img4 from "components/ScreenShot/login.png"
-import Img5 from "components/ScreenShot/med-shop.png"
-import Img6 from "components/ScreenShot/detail.png"
+
 
 
 function HomeComponent() {
@@ -24,8 +23,7 @@ function HomeComponent() {
       <img src={Img2} className="sliderimg"/>
       <img src={Img3} className="sliderimg"/>
       <img src={Img4} className="sliderimg"/>
-      <img src={Img5} className="sliderimg"/>
-      <img src={Img6} className="sliderimg"/>
+      
       
             </AliceCarousel>
         </Container>
