@@ -75,7 +75,6 @@ const Container = styled.div`
         margin: 20px;
         width: 40%;
         padding: 10px;
-
     }
    
     .left{
@@ -89,4 +88,3 @@ const Container = styled.div`
         widht: 60px;
     }
 `;
-    
