@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="legal">
                     <h3 className="ml">Terms of Services</h3>
                     <h3 className="ml">Privacy Policy</h3>
-                    <h3 className="ml">Cookie Settings</h3>
+                    
                 </div>
                 <h3 className="copyright"> &copy; {new Date().getFullYear()} Quartile Technologies. All rights reserved.</h3>
             </CopyRight>
