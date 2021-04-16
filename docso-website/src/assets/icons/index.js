@@ -4,6 +4,7 @@ import calenderLogo from'./297443.png';
 import phoneLogo from'./724664.png';
 import clockLogo from'./862358.png';
 import bellLogo from'./1182718.png';
+import advantageimg from'./advantageimg.png';
 import infoLogo from'./info.png';
 import hospitalLogo from'./hospital.png';
 import medicineLogo from'./medicine.png';
@@ -32,6 +33,10 @@ const ClockLogo = (props) => (
 
 const BellLogo = (props) => (
     <img src={bellLogo} alt={"bell Logo"} draggable="false" {...props} style={{color: "white"}}></img>
+)
+
+const AdvantageImage = (props) => (
+    <img src={advantageimg} alt={"advantage image"} draggable="false" {...props} style={{color: "white"}}></img>
 )
 
 const InfoLogo = (props) => (
@@ -70,6 +75,7 @@ export {
     PhoneLogo,
     ClockLogo,
     BellLogo,
+    AdvantageImage,
     InfoLogo,
     HospitalLogo,
     MedicineLogo,
