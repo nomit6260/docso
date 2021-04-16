@@ -13,7 +13,7 @@ function FeaturesComponent() {
 
             <Card>
                 <CardHeading>
-                    <HospitalLogo className="logo"/>Choose your hospital
+                    <HospitalLogo className="logo"/><span className="Chead">Choose your hospital</span>
                 </CardHeading><br/>
                 <p>You can manually choose your's choice of hospital and easily consult to your neariest hospital.</p>
             </Card>
@@ -35,7 +35,7 @@ function FeaturesComponent() {
             <Card>
                 <CardHeading>
                  <MedicineLogo className="logo"/>Buy Medicine Online
-                </CardHeading>
+                </CardHeading><br/>
                 <p>You can order medicine online with easy and convenient payment options.</p>
             </Card>
 
@@ -71,6 +71,9 @@ const Container = styled.div`
         color:#1eab94;
         text-align:center;
     }
+    .Chead{
+        margin-top:
+    }
     .snap{
         width:450px;
         height:auto;
@@ -85,6 +88,7 @@ const Container = styled.div`
     p{
         font-size: 1.5rem;
         color: #095DB9;
+        margin-left:5px;
     }
     .box{
         border: solid;
@@ -95,14 +99,11 @@ const Container = styled.div`
 
     }
    
-    .left{
-        display: flex;
-    }
-    .right{
-        display: flex;
-    }
     .logo{
-        height: 40px;
-        widht: 40px;
+        height: 60px;
+        widht: 60px;
+        margin-top:5px;
+        margin-left:5px;
+        padding-right:30px;
     }
 `;
