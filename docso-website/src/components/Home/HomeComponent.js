@@ -18,14 +18,17 @@ import Img4 from "components/ScreenShot/login.png"
 function HomeComponent() {
     return (
         <Container>
-            <AliceCarousel autoPlay autoPlayInterval="1000">
-      <img src={Img1} className="sliderimg"/>
-      <img src={Img2} className="sliderimg"/>
-      <img src={Img3} className="sliderimg"/>
-      <img src={Img4} className="sliderimg"/>
+            <div>
+             <AliceCarousel autoPlay autoPlayInterval="1000">
+                 <img src={Img1} className="sliderimg"/>
+                 <img src={Img2} className="sliderimg"/>
+                 <img src={Img3} className="sliderimg"/>
+                 <img src={Img4} className="sliderimg"/>
       
       
             </AliceCarousel>
+            </div>
+     
         </Container>
     )
 }

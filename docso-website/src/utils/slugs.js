@@ -4,4 +4,6 @@ export default {
     contactus: '/contactus',
     advantage: '/advantage',
     aboutus: '/aboutus',
+    termandcondition: '/termandcondition',
+    privacypolicy: '/privacypolicy',
 }
