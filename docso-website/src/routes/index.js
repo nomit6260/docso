@@ -10,7 +10,7 @@ const HomeComponent = lazy(() => import('components/Home/HomeComponent'));
 const ContactUsComponent = lazy(() => import('components/Pages/ContactUsComponent'));
 const AdvantageComponent = lazy(() => import('components/Pages/AdvantageComponent'));
 const FeaturesComponent = lazy(() => import('components/Pages/FeaturesComponent'));
-const TermAndConditionComponent = lazy(() => import('components/Pages/TermandConditionComponent'));
+const TermAndConditionComponent = lazy(() => import('components/Pages/TermAndConditionComponent'));
 const PrivacyPolicyComponent = lazy(() => import('components/Pages/PrivacyPolicyComponent'));
 
 

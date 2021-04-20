@@ -1,16 +1,19 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from "styled-components"
 
 
-const PrivacyPolicyComponent = () => {
-  return (
-    <Container>
-        pp
-    </Container>
-  );
-};
+function PrivacyPolicyComponent() {
+    return (
+        <Container>
+            <h1 className="head">Privacy Policy</h1>
+           
+        </Container>
+    )
+}
+
 export default PrivacyPolicyComponent
 
 const Container = styled.div`
-
-`;
+    padding-top: 8rem;
+    
+`
