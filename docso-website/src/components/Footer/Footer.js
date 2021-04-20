@@ -9,17 +9,12 @@ const Footer = () => {
             
             <CopyRight>
                 <div className="legal">
-                    <Links className="links">
                        <li>
                        <Link to="/termandcondition">Term and Condition</Link>
                        </li>
-                      <li>
+                       <li>
                        <Link to="/privacypolicy">Privacy Policy</Link>
-                      </li>
-      
-                    </Links>
-   
-                    
+                       </li>               
                 </div>
 
                 <h3 className="copyright"> &copy; {new Date().getFullYear()} Quartile Technologies. All rights reserved.</h3>

@@ -7,8 +7,8 @@ function PrivacyPolicyComponent() {
     <Container>
         pp
     </Container>
-  );
-};
+  )
+}
 export default PrivacyPolicyComponent
 
 const Container = styled.div`

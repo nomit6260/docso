@@ -7,8 +7,8 @@ function TermAndConditionComponent() {
     <Container>
         t and c
     </Container>
-  );
-};
+  )
+}
 export default TermAndConditionComponent
 
 const Container = styled.div`
