@@ -10,6 +10,8 @@ const HomeComponent = lazy(() => import('components/Home/HomeComponent'));
 const ContactUsComponent = lazy(() => import('components/Pages/ContactUsComponent'));
 const AdvantageComponent = lazy(() => import('components/Pages/AdvantageComponent'));
 const FeaturesComponent = lazy(() => import('components/Pages/FeaturesComponent'));
+const TermAndConditionComponent = lazy(() => import('components/Pages/TermandConditionComponent'));
+const PrivacyPolicyComponent = lazy(() => import('components/Pages/PrivacyPolicyComponent'));
 
 
 export const Root = ({ theme }) => (
@@ -21,6 +23,8 @@ export const Root = ({ theme }) => (
         <Route exact path={SLUGS.contactus} component={ContactUsComponent} />
         <Route exact path={SLUGS.advantage} component={AdvantageComponent} />
         <Route exact path={SLUGS.features} component={FeaturesComponent} />
+        <Route exact path={SLUGS.termandcondition} component={TermAndConditionComponent} />
+        <Route exact path={SLUGS.privacypolicy} component={PrivacyPolicyComponent} />
         <Redirect to={SLUGS.home} />
       </Switch>
     </Suspense>

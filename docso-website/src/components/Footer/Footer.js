@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import QuartileFooter from "components/UI/QuartileFooter";
-import Links from "components/UI/Links";
-import Subscribe from "components/UI/Subscribe"
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
     return (
@@ -10,10 +9,17 @@ const Footer = () => {
             
             <CopyRight>
                 <div className="legal">
-                    <h3 className="ml">Terms of Services</h3>
-                    <h3 className="ml">Privacy Policy</h3>
-                    <h3 className="ml">Cookie Settings</h3>
+                    <Links className="links">
+                       <li>
+                       <Link to="/termandcondition">Term and Condition</Link>
+                       </li>
+                      <li>
+                       <Link to="/privacypolicy">Privacy Policy</Link>
+                      </li>
+      
+                    </Links>
                 </div>
+
                 <h3 className="copyright"> &copy; {new Date().getFullYear()} Quartile Technologies. All rights reserved.</h3>
             </CopyRight>
         </FooterContainer>
