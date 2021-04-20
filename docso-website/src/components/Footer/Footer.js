@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -9,14 +9,19 @@ const Footer = () => {
             
             <CopyRight>
                 <div className="legal">
+<<<<<<< HEAD
                        <li>
                        <Link to="/termandcondition">Term and Condition</Link>
                        </li>
                        <li>
                        <Link to="/privacypolicy">Privacy Policy</Link>
                        </li>               
+=======
+                    <Link to="/termandcondition"><h3 className="ml">Terms of Services</h3></Link>
+                    <Link to="/privacypolicy"><h3 className="ml">Privacy Policy</h3></Link>
+                    
+>>>>>>> 1483c30fd995837130194da7435a65f6f7434893
                 </div>
-
                 <h3 className="copyright"> &copy; {new Date().getFullYear()} Quartile Technologies. All rights reserved.</h3>
             </CopyRight>
         </FooterContainer>
