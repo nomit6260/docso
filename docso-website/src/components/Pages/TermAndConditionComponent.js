@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 
-const TermAndConditionComponent = () => {
+function TermAndConditionComponent() {
   return (
     <Container>
         t and c
