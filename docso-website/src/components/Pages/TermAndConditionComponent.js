@@ -40,11 +40,12 @@ function TermAndConditionComponent() {
             app won’t work properly or at all. The app does use third party services that 
             declare their own Terms and Conditions.
             </p>
-            <p className="para">
-              5. Link to Terms and Conditions of third party service providers used by the app
-            Google Play Services
-             Expo
-             </p>
+            <p className="para">5. Link to privacy policy of third party service providers used by the app
+                <ul className="list">
+                <li>Google Play Services</li>
+                <li>Expo</li>
+                </ul>
+            </p>
 
              <p className="para">
                6. You should be aware that there are certain things that QuartileLabs will not 
@@ -116,7 +117,7 @@ function TermAndConditionComponent() {
 export default TermAndConditionComponent
 
 const Container = styled.div`
-    padding-top: 8rem;
+    padding: 8rem;
 
   .head{
     margin-left: 40px;
@@ -130,6 +131,9 @@ const Container = styled.div`
     font-family: system-ui;
     font-size: 15px;
     color: black;
+  }
+  .list{
+    list-style-type: square;
   }
     
 `;
