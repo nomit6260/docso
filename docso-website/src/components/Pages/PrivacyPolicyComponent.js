@@ -1,10 +1,14 @@
 import React from 'react'
 import styled from "styled-components"
+import Img5 from "components/ScreenShot/download-background.jpg"
 
 
 function PrivacyPolicyComponent() {
     return (
-        <Container>
+        <Container style={{backgroundImage: `url(${Img5})`,
+        backgroundRepeat: 'no-repeat',
+         width:'100%', backgroundAttachment:'fixed',
+          backgroundSize:'100% 100%' }}>
             <h1 className="head">Privacy Policy</h1>
             <p className="para">QuartileLabs built the Jagdamba Dairy app as a Free app. 
              This SERVICE is provided by QuartileLabs at no cost and is intended for
@@ -111,12 +115,26 @@ const Container = styled.div`
     .head{
         font-size: 25px;
         margin-left: 40px;
-        color: blue;
+        color: white;
+        @media (max-width: 600px) {
+            text-align: justify;
+            font-size:4rem;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+          }
     }
     .para{
-        font-size: 15px;
+         font-size: 15px;
         color: black;
         margin-left: 40px;
+        @media (max-width: 600px) {
+            text-align: justify;
+            font-size:1.8rem;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+          }
 
     }
     .list{

@@ -1,3 +1,4 @@
+
 import React from 'react'
 import styled from "styled-components"
 import AliceCarousel from 'react-alice-carousel';
@@ -23,22 +24,24 @@ function HomeComponent() {
     return (
         <Container style={{backgroundImage: `url(${Img5})`, backgroundRepeat: 'no-repeat', width:'100%', backgroundAttachment:'fixed', backgroundSize:'100% 100%' }}>
      <div>
-                <img src={Img1}  className="image1"></img>
-                <img src={Img2}  className="image2"></img>
+                
                 </div>
                 
                 <div><h1 class="head">MOBILE APP TO</h1> <span className="change"> </span></div>
 
                 <p>Docs'O not only provides you platform where you can book your appointments online but also provides you with some helpful features like patholabs, online digital reports, easy communication between doctor and patient , receive madicines at your doorsteps. Instead of downloading different apps for these purpose download Docs'O and enjoy all the features in one single app bacause "YOUR HEALTH COMES FIRST". Download it today!</p>
-
+               
 
                 <Link to={{ pathname: "https://google.com" }} target="_blank"><BlackBtn className="btn"> <FaApple/> App Store</BlackBtn></Link>
                 <Link to={{ pathname: "https://google.com" }} target="_blank"><BlackBtn className="btn"> <FaGooglePlay/> Play Store</BlackBtn></Link>
+                <img src={Img1}  className="image1"></img>
+                <img src={Img2}  className="image2"></img>
                 <br/><br/><br/><br/><br/>
                 <div>
                     <img src={Img3} className="image3"></img>
                     <h1 className="head1">Goals Setting</h1><br/><br/>
                     <p class="desc">Docs'O can easily help you to book your appointments with a doctor and many more functions like buying medicine online, calculate your BMI, see nearby medical stores.</p>
+                    
                     <br/><br/>
                     <h1 className="head1">User Feedback</h1><br/><br/>
                     <p className="desc">This is a great app which can help you save time and make your live easier. And it will help improve your productivity levels.<br/>You should definitely give it a try when you need a good app.</p>
@@ -115,26 +118,10 @@ function HomeComponent() {
             <br/>
             <br/>
             <br/>
-            <img src={Img4}  className="image1"></img>
-                <img src={Img3}  className="image2"></img>
-            <div><h1 class="head">Download Docs'O</h1></div>
-
-                <p>Docs'O not only provides you platform where you can book your appointments online but also provides you with some helpful features like patholabs, online digital reports, easy communication between doctor and patient , receive madicines at your doorsteps. Instead of downloading different apps for these purpose download Docs'O and enjoy all the features in one single app bacause "YOUR HEALTH COMES FIRST". Download it today!</p>
-
-
-                <Link to={{ pathname: "https://google.com" }} target="_blank"><BlackBtn className="btn"> <FaApple/> App Store</BlackBtn></Link>
-                <Link to={{ pathname: "https://google.com" }} target="_blank"><BlackBtn className="btn"> <FaGooglePlay/> Play Store</BlackBtn></Link>
-
-
-
-
-                <br/>
-            <br/>
             
-            <br/><br/>
-            <br/>
-            <br/>
-            
+
+
+
         </Container>
     )
 }
@@ -142,7 +129,7 @@ function HomeComponent() {
 export default HomeComponent
 
 const Container = styled.div`
-    padding-top: 8rem;
+    padding-top: 12rem;
     padding-left:8rem;
     .sliderimg{
         width: 400px;
@@ -168,11 +155,21 @@ const Container = styled.div`
           width:50%;
           color:white;
           font-size:2rem;
+          @media (max-width: 600px) {
+            text-align: justify;
+            font-size:1.8rem;
+            width:90%;
+          }
       }
       .desc{
         width:80%;
         color:white;
         font-size:1.8rem;
+        @media (max-width: 600px) {
+            font-size:1.8rem;
+            
+          }
+        
       }
       .desc1{
         width:50%;
@@ -182,6 +179,11 @@ const Container = styled.div`
       .head{
           font-size:6rem;
           color:white;
+          @media (max-width: 600px) {
+            text-align: justify;
+            font-size:5rem;
+           
+          }
       }
       .head1{
           font-size:3rem;
@@ -195,8 +197,12 @@ const Container = styled.div`
                 animation: changetext 10s infinite linear;
                 font-size:6rem;
                 color: ${props => props.theme.success};
+                @media (max-width: 600px) {
+                    text-align: justify;
+                    font-size:5rem;
+                   
+                  }
               
-
       }
       
       @keyframes changetext{
@@ -213,19 +219,39 @@ const Container = styled.div`
         width:200px;
         height:auto;
         float:right;
-        margin-right:70px;
-        margin-top:80px;
+        margin-right:50px;
+        margin-top:-450px;
+        @media (max-width: 600px) {                                               
+            width:100px;
+            height:auto;
+            margin-top:85px;
+            margin-right:150px;
+          }
     }
+    
     .image2{
         width:300px;
         height:auto;
+        margin-top:-500px;
         float:right;
+        margin-right:200px;
+        @media (max-width: 600px) {
+            width:150px;
+            height:auto;
+            margin-top:50px;
+            margin-right:0px;
+          }
        
     }
     .image3{
         width:500px;
         height:auto;
         float:left;
+        @media (max-width: 600px) {
+            width:250px;
+            height:auto;
+            margin-left:-40px;
+          }
        
     }
     .image4{
@@ -233,8 +259,12 @@ const Container = styled.div`
         height:auto;
         float:right;
         margin-right:100px;
+        @media (max-width: 600px) {
+            width:250px;
+            height:auto;
+            margin-right:0px;
+          }
        
     }
       
 `
-
