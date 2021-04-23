@@ -2,7 +2,7 @@
   "name": "quartile-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/nomit6260/docso",
+  "homepage": "https://nomit6260.github.io/docso",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
