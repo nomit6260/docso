@@ -1,10 +1,14 @@
 import React from 'react'
 import styled from "styled-components"
+import Img5 from "components/ScreenShot/download-background.jpg"
 
 
 function TermAndConditionComponent() {
     return (
-        <Container>
+        <Container style={{backgroundImage: `url(${Img5})`,
+        backgroundRepeat: 'no-repeat',
+         width:'100%', backgroundAttachment:'fixed',
+          backgroundSize:'100% 100%' }}>
             <h1 className="head">Term AND Condition</h1>
             <p className="para">
               1. By downloading or using the app, these terms will automatically apply 
@@ -123,7 +127,14 @@ const Container = styled.div`
     margin-left: 40px;
     font-family: system-ui;
     font-size: 25px;
-    color: blue;
+    color: white;
+    @media (max-width: 600px) {
+      text-align: justify;
+      font-size:4rem;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   .para{
     margin-left: 40px;
@@ -131,6 +142,13 @@ const Container = styled.div`
     font-family: system-ui;
     font-size: 15px;
     color: black;
+    @media (max-width: 600px) {
+      text-align: justify;
+      font-size:1.8rem;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   .list{
     list-style-type: square;

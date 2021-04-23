@@ -1,3 +1,4 @@
+
 import React from 'react'
 import styled from "styled-components"
 import AliceCarousel from 'react-alice-carousel';
@@ -35,9 +36,6 @@ function HomeComponent() {
                 <Link to={{ pathname: "https://google.com" }} target="_blank"><BlackBtn className="btn"> <FaGooglePlay/> Play Store</BlackBtn></Link>
                 <img src={Img1}  className="image1"></img>
                 <img src={Img2}  className="image2"></img>
-                <br/><br/><br/><br/><br/>
-                <br/><br/><br/><br/><br/>
-                <br/><br/><br/><br/><br/>
                 <br/><br/><br/><br/><br/>
                 <div>
                     <img src={Img3} className="image3"></img>
@@ -120,19 +118,12 @@ function HomeComponent() {
             <br/>
             <br/>
             <br/>
-            <img src={Img4}  className="image1"></img>
-                <img src={Img3}  className="image2"></img>
-            <div><h1 class="head">Download Docs'O</h1></div>
-
-                <p>Docs'O not only provides you platform where you can book your appointments online but also provides you with some helpful features like patholabs, online digital reports, easy communication between doctor and patient , receive madicines at your doorsteps. Instead of downloading different apps for these purpose download Docs'O and enjoy all the features in one single app bacause "YOUR HEALTH COMES FIRST". Download it today!</p>
-
-
-                <Link to={{ pathname: "https://google.com" }} target="_blank"><BlackBtn className="btn"> <FaApple/> App Store</BlackBtn></Link>
-                <Link to={{ pathname: "https://google.com" }} target="_blank"><BlackBtn className="btn"> <FaGooglePlay/> Play Store</BlackBtn></Link>
+            
 
 
 
-
+<<<<<<< HEAD
+=======
                 <br/>
             <br/>
             
@@ -142,6 +133,7 @@ function HomeComponent() {
 
             <AdvantageComponent/>
             
+>>>>>>> 88efff984bd86b6f0741485649d2f1b2033c0da8
         </Container>
     )
 }
@@ -223,7 +215,6 @@ const Container = styled.div`
                    
                   }
               
-
       }
       
       @keyframes changetext{
@@ -262,8 +253,7 @@ const Container = styled.div`
             margin-top:50px;
             margin-right:0px;
           }
-       
-    }
+          
     .image3{
         width:500px;
         height:auto;
@@ -289,4 +279,3 @@ const Container = styled.div`
     }
       
 `
-
