@@ -36,6 +36,12 @@ function HomeComponent() {
                 <Link to={{ pathname: "https://google.com" }} target="_blank"><BlackBtn className="btn"> <FaGooglePlay/> Play Store</BlackBtn></Link>
                 <img src={Img1}  className="image1"></img>
                 <img src={Img2}  className="image2"></img>
+<<<<<<< HEAD
+=======
+                <br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/>
+>>>>>>> 8f3e9ab1d6b557adb9dbc9e673f68d54076cf2c6
                 <br/><br/><br/><br/><br/>
                 <div>
                     <img src={Img3} className="image3"></img>
@@ -219,7 +225,11 @@ const Container = styled.div`
         width:200px;
         height:auto;
         float:right;
+<<<<<<< HEAD
         margin-right:50px;
+=======
+        margin-right:150px;
+>>>>>>> 8f3e9ab1d6b557adb9dbc9e673f68d54076cf2c6
         margin-top:-450px;
         @media (max-width: 600px) {                                               
             width:100px;
@@ -234,7 +244,11 @@ const Container = styled.div`
         height:auto;
         margin-top:-500px;
         float:right;
+<<<<<<< HEAD
         margin-right:200px;
+=======
+        margin-right:300px;
+>>>>>>> 8f3e9ab1d6b557adb9dbc9e673f68d54076cf2c6
         @media (max-width: 600px) {
             width:150px;
             height:auto;
