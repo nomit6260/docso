@@ -73,11 +73,9 @@ function HomeComponent() {
                 <br/>
            
             <br/>
-            <br/>  <br/>
+            <br/>  
             <br/>
-            <br/>  <br/>
-            <br/>
-            <br/>  <br/>
+           
             
                 <div>
             <Carousel
@@ -110,12 +108,7 @@ function HomeComponent() {
 
             <br/>
             <br/>
-            <br/>
             
-            
-            <br/>
-            <br/>
-            <br/>
 
             
             
@@ -244,7 +237,7 @@ const Container = styled.div`
         height:auto;
         float:left;
         @media (max-width: 600px) {
-            width:250px;
+            width:150px;
             height:auto;
             margin-left:-40px;
           }
