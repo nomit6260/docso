@@ -2,10 +2,12 @@ import React from 'react'
 import styled from "styled-components"
 import { CalenderLogo,PhoneLogo,ClockLogo,BellLogo,AdvantageImage } from "assets/icons"
 import { Link } from 'react-router-dom';
+import Img5 from "components/ScreenShot/download-background.jpg"
+
  
 function AdvantageComponent() {
    return (
-       <Container>
+       <Container style={{backgroundImage: `url(${Img5})`, backgroundRepeat: 'no-repeat', width:'100%', backgroundAttachment:'fixed', backgroundSize:'100% 100%' }}>
            <h1 className="head">Advantages</h1>
            <div className="half">
                <Link to="/advantage"><AdvantageImage className="image"/></Link>
@@ -70,19 +72,19 @@ const Container = styled.div`
    padding-left: 8rem;
   
    .head{
-       font-size:3.3rem;
-       color:#1eab94;
+       font-size:4rem;
+       color:white;
        text-align: center;
    }
    .title{
        font-size: 2.0rem;
-       color: #054625;
+       color: black;
        margin-left: 20px;
        margin-top: 10px;
    }
    .para{
        font-size: 1.5rem;
-       color: #095DB9;
+       color: white;
    }
    .box{
        border: solid;

@@ -51,10 +51,11 @@ export const BlueBtn = styled(DefaultBtn)`
 `;
 
 export const BlackBtn = styled(DefaultBtn)`
-  background: black;
+background: ${props => props.theme.success};
   padding: 1.3rem 3.2rem;
   color: white;
   transition: 0.3s;
+  border-radius:40px;
   &:hover {
     background: white;
     color: black;
