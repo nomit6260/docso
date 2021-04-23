@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import Carousel from "components/Carousel/CarouselNauka"
-
+import AdvantageComponent from "components/Pages/AdvantageComponent"
 import Img1 from "components/ScreenShot/home.png"
 import Img2 from "components/ScreenShot/drawer.png"
 import Img3 from "components/ScreenShot/book.png"
@@ -122,6 +122,18 @@ function HomeComponent() {
 
 
 
+<<<<<<< HEAD
+=======
+                <br/>
+            <br/>
+            
+            <br/><br/>
+            <br/>
+            <br/>
+
+            <AdvantageComponent/>
+            
+>>>>>>> 88efff984bd86b6f0741485649d2f1b2033c0da8
         </Container>
     )
 }
