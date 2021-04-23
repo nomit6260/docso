@@ -27,8 +27,11 @@ function PrivacyPolicyComponent() {
             information used to identify you.</p>
 
             <p className="para">Link to privacy policy of third party service providers used by the app
-                Google Play Services
-                Expo</p>
+                <ul className="list">
+                <li>Google Play Services</li>
+                <li>Expo</li>
+                </ul>
+            </p>
 
             <h1 className="head">Log Data</h1>
             <p className="para">we want to inform you that whenever you use our Service, in a case of an error 
@@ -51,15 +54,15 @@ function PrivacyPolicyComponent() {
             <h1 className="head">Service Providers</h1>
              <p className="para">we may employ third-party companies and individuals due to the following reasons:
 
-To facilitate our Service;
-To provide the Service on our behalf;
-To perform Service-related services; or
-To assist us in analyzing how our Service is used.
+            To facilitate our Service;
+            To provide the Service on our behalf;
+            To perform Service-related services; or
+            To assist us in analyzing how our Service is used.
 
-we want to inform users of this Service that these third parties have access 
-to your Personal Information. The reason is to perform the tasks assigned to 
-them on our behalf. However, they are obligated not to disclose or use the 
-information for any other purpose.</p>
+            we want to inform users of this Service that these third parties have access 
+            to your Personal Information. The reason is to perform the tasks assigned to 
+            them on our behalf. However, they are obligated not to disclose or use the 
+            information for any other purpose.</p>
 
             <h1 className="head">Security</h1>
             <p className="para">we value your trust in providing us your Personal Information, thus we are 
@@ -93,8 +96,8 @@ information for any other purpose.</p>
              <p className="para">This policy is effective as of 2020-06-04</p>
 
             <h1 className="head">Contact Us</h1>
-          <p className="para"> If you have any questions or suggestions about our Privacy Policy, do not hesitate 
-           to contact us at contact@docso.life</p>
+            <p className="para"> If you have any questions or suggestions about our Privacy Policy, do not hesitate 
+             to contact us at contact@docso.life</p>
            
         </Container>
     )
@@ -103,7 +106,7 @@ information for any other purpose.</p>
 export default PrivacyPolicyComponent
 
 const Container = styled.div`
-    padding-top: 8rem;
+    padding: 8rem;
 
     .head{
         font-size: 25px;
@@ -114,5 +117,9 @@ const Container = styled.div`
         font-size: 15px;
         color: black;
         margin-left: 40px;
+
+    }
+    .list{
+        list-style-type: square;
     }
 `;
