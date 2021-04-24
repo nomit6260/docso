@@ -1,7 +1,6 @@
 
 import React from 'react'
 import styled from "styled-components"
-import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 import { BlackBtn } from "styles/Buttons"
 import { FaGooglePlay, FaApple, FaDesktop, FaUsers, FaMobileAlt, FaFontAwesome } from "react-icons/fa";
@@ -62,7 +61,7 @@ function HomeComponent() {
                 <br/><br/><br/><br/><br/>
 
                 <div>
-            <Carousel
+            <Carousel 
                 elements={
                     [
                         <div className="slide-1">
@@ -225,7 +224,7 @@ const Container = styled.div`
           font-size:6rem;
           color:white;
           @media (max-width: 600px) {
-            text-align: justify;
+            text-align: left;
             font-size:5rem;
            
           }
@@ -243,8 +242,8 @@ const Container = styled.div`
                 font-size:6rem;
                 color: ${props => props.theme.success};
                 @media (max-width: 600px) {
-                    text-align: justify;
-                    font-size:5rem;
+                    text-align: center;
+                    font-size:4.8rem;
                    
                   }
               
@@ -269,7 +268,7 @@ const Container = styled.div`
         @media (max-width: 600px) {                                               
             width:100px;
             height:auto;
-            margin-top:150px;
+            margin-top:120px;
             margin-right:50px;
           }
     }

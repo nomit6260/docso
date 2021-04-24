@@ -10,7 +10,12 @@ box-shadow: 5px 10px 8px #ABAEAC;
 `
 
 export const CardHeading = styled.div`
-text-align: left;
 font-size: 2.2rem;
 color:black;
+@media (max-width: 600px) {
+    margin-top:5px;
+    font-size:1.8rem;
+    text-align:justify;
+   
+   }
 `

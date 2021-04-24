@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { QuartileLogoWhite } from "assets/icons"
 import NavbarLinks from "./NavbarLinks";
 import { withRouter } from "react-router-dom"
+import { HiMenu } from "react-icons/hi";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = React.useState(false);
@@ -30,7 +31,7 @@ const Navbar = () => {
     <Container>
       <Nav className={navbarClasses.join(" ")}>
         {/* <div onClick={this.toggle}>
-            <SVGicon className="navicon" name="nav" />
+            <HiMenu className="navicon" name="nav" />
           </div> */}
           <Link to="/"><QuartileLogoWhite className="QuartileLogo"/></Link>
         
@@ -38,7 +39,7 @@ const Navbar = () => {
         <NavbarLinks />
       </Nav>
       {/* <NavMenu className={this.state.toggle ? "visibleMenu" : "hiddenMenu"}>
-          <Search />
+          
           <NavbarLinks />
         </NavMenu> */}
     </Container>
