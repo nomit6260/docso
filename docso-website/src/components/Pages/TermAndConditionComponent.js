@@ -121,21 +121,23 @@ function TermAndConditionComponent() {
 export default TermAndConditionComponent
 
 const Container = styled.div`
-    padding: 8rem;
+padding: 8rem; 
+@media (max-width: 600px) {
+   padding:4rem;
+ }
 
-  .head{
-    margin-left: 40px;
-    font-family: system-ui;
-    font-size: 25px;
-    color: white;
-    @media (max-width: 600px) {
-      text-align: justify;
-      font-size:4rem;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
+.head{
+   font-size: 25px;
+   margin-left: 40px;
+   color: white;
+   @media (max-width: 600px) {
+       text-align: left;
+       font-size:3rem;
+       width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+     }
+}
   .para{
     margin-left: 40px;
     margin-right: 40px;

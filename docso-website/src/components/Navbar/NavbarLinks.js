@@ -32,8 +32,8 @@ const Links = styled.ul`
   @media (max-width: 600px) {
     margin-left:0rem;
     align-items: left;
-  justify-content: left;
-  font-size:5rem;
+    justify-content: left;
+    font-size:3rem;
   }
 
   li {

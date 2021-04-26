@@ -110,15 +110,18 @@ function PrivacyPolicyComponent() {
 export default PrivacyPolicyComponent
 
 const Container = styled.div`
-    padding: 8rem;
+    padding: 8rem; 
+     @media (max-width: 600px) {
+        padding:4rem;
+      }
 
     .head{
         font-size: 25px;
         margin-left: 40px;
         color: white;
         @media (max-width: 600px) {
-            text-align: justify;
-            font-size:4rem;
+            text-align: left;
+            font-size:3rem;
             width: 100%;
             margin-left: auto;
             margin-right: auto;

@@ -75,7 +75,7 @@ const Container = styled.div`
     padding-top: 8rem;  
     padding-left: 5rem;
     @media (max-width: 600px) {
-        padding-left:2.75rem;
+        padding-left:2rem;
        }
     
     
@@ -135,7 +135,7 @@ const Container = styled.div`
         width: 60px;
         margin-top:5px;
         margin-left:5px;
-        padding-right:30px;
+        padding-right:5px;
         @media (max-width: 600px) {
             width:40px;
             height:40px;
