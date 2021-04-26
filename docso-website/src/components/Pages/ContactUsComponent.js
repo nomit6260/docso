@@ -1,5 +1,4 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
 import styled from "styled-components"
 import { FaPhoneSquareAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { SiGooglemaps } from "react-icons/si";
@@ -46,6 +45,10 @@ const Container = styled.div`
     .head1{
         font-size:2.2rem;
         color:black;
+        @media (max-width: 600px) {
+            margin-right: 10px;
+            font-size:2rem;
+        }
     }
     label{
         font-size:1.5rem;
@@ -54,10 +57,16 @@ const Container = styled.div`
     input{
         width:25%;
         height:3rem;
+        @media (max-width: 600px) {
+            width: 50%;
+        }
     }
     textarea{
         width:25%;
         height:8rem;
+        @media (max-width: 600px) {
+            width: 50%;
+        }
     }
     button{
         font-size:1.7rem;
@@ -78,16 +87,27 @@ const Container = styled.div`
         left: 35%;
         margin-top:5px;
         top:20%;
+        @media (max-width: 600px) {
+            border-top: 2px solid gray;
+            border-left: none;
+            left: 0%;
+            top: 70%;
+        }
         
       }
       .infohead{
           padding-left:5rem;
           font-size:2.2rem;
           color:black;
+        
+        }
+          
+          
       }
       .info{
           padding-left:5rem;
           color:black;
           font-size:1.7rem;
+          }
       }
 `

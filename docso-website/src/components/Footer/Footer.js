@@ -86,6 +86,9 @@ const CopyRight = styled.div`
     }
     .copyright{
         margin-right: 20rem;
+        @media (max-width: 600px) {
+          margin-left: 5rem;
+        }
     }
     cursor: pointer;
     

@@ -118,10 +118,9 @@ const Container = styled.div`
         color: white;
         @media (max-width: 600px) {
             text-align: justify;
-            font-size:4rem;
+            font-size:2rem;
             width: 100%;
-            margin-left: auto;
-            margin-right: auto;
+           
           }
     }
     .para{
@@ -130,10 +129,9 @@ const Container = styled.div`
         margin-left: 40px;
         @media (max-width: 600px) {
             text-align: justify;
-            font-size:1.8rem;
+            font-size:1.2rem;
             width: 100%;
-            margin-left: auto;
-            margin-right: auto;
+            
           }
 
     }

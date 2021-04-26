@@ -2,7 +2,6 @@ import React from 'react'
 import styled from "styled-components"
 import { Card, CardHeading } from "components/Pages/Card"
 import { InfoLogo, HospitalLogo, MedicineLogo, MedLogo, PathoLogo, ReportLogo, Scrnshot1 } from "assets/icons"
-import { Link } from 'react-router-dom';
 import "animate.css/animate.min.css";
 import Img5 from "components/ScreenShot/download-background.jpg"
 
@@ -13,10 +12,10 @@ function FeaturesComponent() {
          width:'100%', backgroundAttachment:'fixed',
           backgroundSize:'100% 100%' }}>
             <h1 className="head">Features</h1>
-
+            <Scrnshot1 className="snapmob"/>
            <div className="outer">
-        
-              <div class="animate__animated animate__fadeInUp">
+           
+              <div >
           <Card>
                 <CardHeading>
                     <HospitalLogo className="logo"/><span className="Chead">CHOOSE YOUR HOSPITAL</span>
@@ -74,6 +73,9 @@ const Container = styled.div`
     background-color:#f7faff;
     padding-top: 8rem;  
     padding-left: 5rem;
+    @media (max-width: 600px) {
+        padding-left:2.75rem;
+       }
     
     
     .head{
@@ -91,16 +93,30 @@ const Container = styled.div`
         float:right;
         margin-left:-45px;
         display:block;
+        @media (max-width: 600px) {
+           display: none;
+       }
     }
     .title{
         font-size: 2.3rem;
         color: black;
+        @media (max-width: 600px) {
+            margin-top:5px;
+            font-size:1.8rem;
+            text-align:justify;
+            padding-right:40px;
+           }
     }
     p{
         font-size: 1.5rem;
         color: white;
         margin-left:5px;
         padding-bottom:8px;
+        @media (max-width: 600px) {
+            font-size:1.75rem;
+            text-align:justify;
+            padding-right:10px;
+       }
     }
     .box{
         border: solid;
@@ -108,23 +124,39 @@ const Container = styled.div`
         margin-left:20px;
         width: 45%;
         padding: 10px;
-
     }
    
     .logo{
         height: 60px;
-        widht: 60px;
+        width: 60px;
         margin-top:5px;
         margin-left:5px;
         padding-right:30px;
+        @media (max-width: 600px) {
+            width:40px;
+            height:40px;
+            padding-right:5px;
+           }
     }
     .outer{
         display: flex;
+        @media (max-width: 600px) {
+            display:block;
+       }    
     }
-    .inner{
-        display: flex;
-    }
+    
     .second{
         margin-left: none;
+    }
+    .snapmob{
+        display: none;
+        @media (max-width: 600px) {
+            display:block;
+            width: 350px;
+            height: 550px;
+            margin-left: none;
+            
+       } 
+
     }
 `;

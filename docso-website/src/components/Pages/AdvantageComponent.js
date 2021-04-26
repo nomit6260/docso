@@ -57,7 +57,9 @@ function AdvantageComponent() {
                    </div>
                </div>
            </div>
-            
+            <br/>
+            <br/>
+            <br/>
           
         
        </Container>
@@ -70,6 +72,9 @@ const Container = styled.div`
    background-color:#E6EAE8;
    padding-top: 8rem; 
    padding-left: 8rem;
+   @media (max-width: 600px) {
+    padding-left:2rem;
+  }
   
    .head{
        font-size:4rem;
@@ -81,10 +86,20 @@ const Container = styled.div`
        color: black;
        margin-left: 20px;
        margin-top: 10px;
+       @media (max-width: 600px) {
+        margin-top:5px;
+        font-size:1.8rem;
+        text-align:justify;
+       }
+
    }
    .para{
        font-size: 1.5rem;
        color: white;
+       @media (max-width: 600px) {
+            font-size:1.75rem;
+            text-align:justify;
+       }
    }
    .box{
        border: solid;
@@ -93,22 +108,42 @@ const Container = styled.div`
        margin: 20px;
        width: 75%;
        padding: 10px;
+       @media (max-width: 600px) {
+        margin-left:0px;
+        width:80%;
+        padding-left:10px;
+        margin-left:30px;
+      }
    }
  
    .half{
        display: flex;
+       @media (max-width: 600px) {
+       display:block;
+      }
    }
    .logo{
        height: 60px;
-       widht: 60px;
+       width: 60px;
+       @media (max-width: 600px) {
+        width:40px;
+        height:40px;
+      }
    }
  
    .icontitle{
        display: flex;
+       
    }
    .image{
        height: 800px;
        width: 500px;
+       @media (max-width: 600px) {
+        width:250px;
+        height:auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;   
+      }
    }
 `;
-

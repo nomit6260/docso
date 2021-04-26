@@ -1,4 +1,3 @@
-
 import React from 'react'
 import styled from "styled-components"
 import AliceCarousel from 'react-alice-carousel';
@@ -10,19 +9,23 @@ import { Link } from 'react-router-dom';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import Carousel from "components/Carousel/CarouselNauka"
-import AdvantageComponent from "components/Pages/AdvantageComponent"
-import Img1 from "components/ScreenShot/home.png"
-import Img2 from "components/ScreenShot/drawer.png"
-import Img3 from "components/ScreenShot/book.png"
-import Img4 from "components/ScreenShot/login.png"
-import Img5 from "components/ScreenShot/download-background.jpg"
+import Img1 from "components/ScreenShot/splash.png"
+import Img2 from "components/ScreenShot/home.png"
+import Img3 from "components/ScreenShot/drawer.png"
+import Img4 from "components/ScreenShot/book.png"
+import Img5 from "components/ScreenShot/login.png"
+import Img7 from "components/ScreenShot/detail.png"
+import Img8 from "components/ScreenShot/doc-aval.png"
+import Img9 from "components/ScreenShot/med-shop.png"
+import Img10 from "components/ScreenShot/signup.png"
+import Img6 from "components/ScreenShot/download-background.jpg"
 
 
   
 
 function HomeComponent() {
     return (
-        <Container style={{backgroundImage: `url(${Img5})`, backgroundRepeat: 'no-repeat', width:'100%', backgroundAttachment:'fixed', backgroundSize:'100% 100%' }}>
+        <Container style={{backgroundImage: `url(${Img6})`, backgroundRepeat: 'no-repeat', width:'100%', backgroundAttachment:'fixed', backgroundSize:'100% 100%' }}>
      <div>
                 
                 </div>
@@ -37,8 +40,9 @@ function HomeComponent() {
                 <img src={Img1}  className="image1"></img>
                 <img src={Img2}  className="image2"></img>
                 <br/><br/><br/><br/><br/>
+
                 <div>
-                    <img src={Img3} className="image3"></img>
+                    {/* <img src={Img3} className="image3"></img> */}
                     <h1 className="head1">Goals Setting</h1><br/><br/>
                     <p class="desc">Docs'O can easily help you to book your appointments with a doctor and many more functions like buying medicine online, calculate your BMI, see nearby medical stores.</p>
                     
@@ -55,9 +59,63 @@ function HomeComponent() {
                 </div>
 
                 <br/><br/><br/><br/><br/>
+
+                <div>
+            <Carousel
+                elements={
+                    [
+                        <div className="slide-1">
+                            <img src={Img1} className="sliderimg"></img>
+                            <div className="text-slide">SPLASH SCREEN</div>
+                        </div>,
+
+                        <div className="slide-2">
+                            <img src={Img2} className="sliderimg"></img>
+                            <div className="text-slide">HOME SCREEN</div>
+                        </div>,
+
+                        <div className="slide-3">
+                            <img src={Img3} className="sliderimg"></img>
+                            <div className="text-slide">DRAWER NAVIGATION</div>
+                        </div>,
+
+                        <div className="slide-4">
+                            <img src={Img4} className="sliderimg"></img>
+                            <div className="text-slide">BOOK DOCTOR</div>
+                        </div>,
+
+                            <div className="slide-5">
+                                <img src={Img5} className="sliderimg"></img>
+                                <div className="text-slide">LOGIN SCREEN</div>
+                            </div>,
+
+                            <div className="slide-6">
+                                <img src={Img7} className="sliderimg"></img>
+                                <div className="text-slide">DETAIL SCREEN</div>
+                            </div>,
+
+                            <div className="slide-7">
+                                <img src={Img8} className="sliderimg"></img>
+                                <div className="text-slide">DOCTOR AVAILABLE</div>
+                            </div>,
+
+                            <div className="slide-8">
+                                <img src={Img9} className="sliderimg"></img>
+                                <div className="text-slide">NEARBY MEDICAL SHOP</div>
+                            </div>,
+
+                            <div className="slide-9">
+                                <img src={Img10} className="sliderimg"></img>
+                                <div className="text-slide">SIGNUP SCREEN</div>
+                            </div>,
+
+                        ]}
+            />
+            </div>
+
                 <br/><br/><br/><br/><br/>
                 <div>
-                    <img src={Img2} className="image4"></img>
+                    {/* <img src={Img2} className="image4"></img> */}
                     <h1 className="head1">Drawer Navigation</h1><br/><br/>
                     <p class="desc">The app contains a drawer navigation which provide you lots of options to navigate, it makes you easily naviagte between the screens.</p>
                     <br/><br/>
@@ -72,68 +130,21 @@ function HomeComponent() {
                     <HiCode className="icon"/> <span className="point"> Well-structured code</span><br/>
                 </div>
                 <br/>
+           
             <br/>
-            <br/>  <br/>
+            <br/>  
             <br/>
-            <br/>  <br/>
-            <br/>
-            <br/>  <br/>
-            <br/>
-            <br/>  <br/>
-            <br/>
-            <br/>  <br/>
+           
             
-                <div>
-            <Carousel
-                elements={
-                    [
-                        <div className="slide-1">
-                            <img src={Img1} className="sliderimg"></img>
-                            
-                        </div>,
-
-                        <div className="slide-2">
-                            <img src={Img2} className="sliderimg"></img>
-
-                        </div>,
-
-                        <div className="slide-3">
-                            <img src={Img3} className="sliderimg"></img>
-
-                        </div>,
-
-                        <div className="slide-4">
-                            <img src={Img4} className="sliderimg"></img>
-
-                        </div>,
-
-                    ]}
-            />
-            </div>
+               
             
 
             <br/>
             <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             
 
-
-
-<<<<<<< HEAD
-=======
-                <br/>
-            <br/>
             
-            <br/><br/>
-            <br/>
-            <br/>
-
-            <AdvantageComponent/>
             
->>>>>>> 88efff984bd86b6f0741485649d2f1b2033c0da8
         </Container>
     )
 }
@@ -143,14 +154,30 @@ export default HomeComponent
 const Container = styled.div`
     padding-top: 12rem;
     padding-left:8rem;
+    @media (max-width: 600px) {
+        padding-left:4rem;
+      }
     .sliderimg{
         width: 400px;
         height: auto;
         display: block;
         margin-left: auto;
         margin-right: auto;      
-        object-fit: cover
+        object-fit: cover;
+        padding-bottom:30px;
+        @media (max-width: 600px) {
+            width:220px;
+            height:auto;
+          }
        
+      }
+      .text-slide{
+          font-size:3rem;
+          color:white;
+          text-align: center;
+          @media (max-width: 600px) {
+            font-size:2rem;
+          }
       }
       
       .icon{
@@ -187,6 +214,10 @@ const Container = styled.div`
         width:50%;
         color:white;
         font-size:1.8rem;
+        @media (max-width: 600px) {
+            font-size:1.8rem;
+            width:80%;
+          }
       }
       .head{
           font-size:6rem;
@@ -231,13 +262,13 @@ const Container = styled.div`
         width:200px;
         height:auto;
         float:right;
-        margin-right:150px;
-        margin-top:-450px;
+        margin-right:0px;
+        margin-top:-420px;
         @media (max-width: 600px) {                                               
             width:100px;
             height:auto;
-            margin-top:85px;
-            margin-right:150px;
+            margin-top:150px;
+            margin-right:50px;
           }
     }
     
@@ -246,12 +277,13 @@ const Container = styled.div`
         height:auto;
         margin-top:-500px;
         float:right;
-        margin-right:300px;
+        margin-right:150px;
         @media (max-width: 600px) {
             width:150px;
             height:auto;
             margin-top:50px;
-            margin-right:0px;
+            margin-right:5px;
+            padding-bottom:50px;
           }
           
     .image3{
@@ -259,9 +291,9 @@ const Container = styled.div`
         height:auto;
         float:left;
         @media (max-width: 600px) {
-            width:250px;
+            width:150px;
             height:auto;
-            margin-left:-40px;
+            margin-left:0px;
           }
        
     }
