@@ -109,10 +109,9 @@ const Container = styled.div`
        width: 75%;
        padding: 10px;
        @media (max-width: 600px) {
-        margin-left:0px;
-        width:80%;
-        padding-left:10px;
-        margin-left:30px;
+        margin-left:10px;
+        width:90%;
+        
       }
    }
  
@@ -123,16 +122,8 @@ const Container = styled.div`
       }
    }
    .logo{
-       height: 60px;
-<<<<<<< HEAD
-       width: 60px;
-=======
-<<<<<<< HEAD
-       width: 60px;
-=======
-       widht: 60px;
->>>>>>> c5a694515b4769007a4958eb0a16157c73b0c6e5
->>>>>>> 95da77d7b4555c3d328d42e922377d3ec169b414
+       width:60px;
+       height:60px;
        @media (max-width: 600px) {
         width:40px;
         height:40px;

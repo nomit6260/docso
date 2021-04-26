@@ -14,11 +14,7 @@ function FeaturesComponent() {
             <h1 className="head">Features</h1>
             <Scrnshot1 className="snapmob"/>
            <div className="outer">
-<<<<<<< HEAD
            
-=======
-        
->>>>>>> c5a694515b4769007a4958eb0a16157c73b0c6e5
               <div >
           <Card>
                 <CardHeading>
@@ -98,13 +94,7 @@ const Container = styled.div`
         margin-left:-45px;
         display:block;
         @media (max-width: 600px) {
-<<<<<<< HEAD
            display: none;
-=======
-           width:200px;
-           height:auto;
-           display:none;
->>>>>>> c5a694515b4769007a4958eb0a16157c73b0c6e5
        }
     }
     .title{
@@ -154,16 +144,7 @@ const Container = styled.div`
             display:block;
        }    
     }
-<<<<<<< HEAD
     
-=======
-    .inner{
-        display: flex;
-        @media (max-width: 600px) {
-            
-       }
-    }
->>>>>>> c5a694515b4769007a4958eb0a16157c73b0c6e5
     .second{
         margin-left: none;
     }

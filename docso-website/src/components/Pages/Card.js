@@ -6,6 +6,10 @@ width:90%;
 margin-top:4rem;
 border: solid;
 box-shadow: 5px 10px 8px #ABAEAC;
+@media (max-width: 600px) {
+    margin-left:10px;
+   
+   }
 
 `
 
