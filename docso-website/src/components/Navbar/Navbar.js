@@ -4,9 +4,12 @@ import { Link } from "react-router-dom";
 import { QuartileLogoWhite } from "assets/icons"
 import NavbarLinks from "./NavbarLinks";
 import { withRouter } from "react-router-dom"
+import { HiMenu } from "react-icons/hi";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = React.useState(false);
+  const [toggle, setToggle] = React.useState(false);
+
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 200) {
@@ -21,6 +24,11 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
   })
+
+  const handleToggle = () => {
+    setToggle(!toggle)
+  };
+
   let navbarClasses = [];
   if (scrolled) {
     console.log(navbarClasses)
@@ -29,18 +37,18 @@ const Navbar = () => {
   return (
     <Container>
       <Nav className={navbarClasses.join(" ")}>
-        {/* <div onClick={this.toggle}>
-            <SVGicon className="navicon" name="nav" />
-          </div> */}
-          <Link to="/"><QuartileLogoWhite className="QuartileLogo"/></Link>
+        <div onClick={handleToggle}>
+            <HiMenu className="navicon" />
+        </div>
+        <Link to="/"><QuartileLogoWhite className="QuartileLogo"/></Link>
         
         {/* <h2>Quartile</h2> */}
         <NavbarLinks />
       </Nav>
-      {/* <NavMenu className={this.state.toggle ? "visibleMenu" : "hiddenMenu"}>
-          <Search />
+      <NavMenu className={toggle ? "visibleMenu" : "hiddenMenu"}>
+          
           <NavbarLinks />
-        </NavMenu> */}
+        </NavMenu>
     </Container>
   )
 }
@@ -124,7 +132,14 @@ const Nav = styled.nav`
   padding: 0 30px;
   padding-left: 50px;
   padding-right: 50px;
-  justify-content: space-between;
+  .navicon {
+    display: none;
+    fill: ${props => props.theme.gray6};
+    width: 25px;
+    height: 100%;
+    @media (max-width: ${props => props.theme.breakPoint9}) {
+      display: block;
+  }}
   .scrolled{
     position: fixed;
     top: 0;
@@ -132,21 +147,15 @@ const Nav = styled.nav`
     background-color: lightblue;
   }
   @media (max-width: ${props => props.theme.breakPoint9}) {
-    height: 4.2rem;
+    /* height: 4.2rem; */
     justify-content: space-between;
   }
   @media (max-width: ${props => props.theme.breakPoint15}) {
     padding: 0 9px;
   }
-  .navicon {
-    display: none;
-    fill: ${props => props.theme.gray6};
-    width: 17px;
-    height: 100%;
-    @media (max-width: ${props => props.theme.breakPoint9}) {
-      display: block;
-    }
+
   }
+  
   .QuartileLogo {
     filter: brightness(0) invert(1);
     height: 38px;
@@ -154,6 +163,7 @@ const Nav = styled.nav`
     // transform: rotate(-1.5deg);
   }
   .links {
+    margin-left: 75%;
     @media (max-width: ${props => props.theme.breakPoint9}) {
       display: none;
     }

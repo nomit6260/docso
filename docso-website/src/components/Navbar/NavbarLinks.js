@@ -29,6 +29,13 @@ const Links = styled.ul`
   font-size: 1.45rem;
   align-items: center;
   justify-content: center;
+  @media (max-width: 600px) {
+    margin-left:0rem;
+    align-items: left;
+  justify-content: left;
+  font-size:5rem;
+  }
+
   li {
     padding-right: 2rem;
     color: white;

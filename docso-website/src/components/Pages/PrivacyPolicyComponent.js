@@ -111,6 +111,9 @@ export default PrivacyPolicyComponent
 
 const Container = styled.div`
     padding: 8rem;
+         @media (max-width: 600px) {
+            padding:2rem;
+          }
 
     .head{
         font-size: 25px;
@@ -131,7 +134,11 @@ const Container = styled.div`
             text-align: justify;
             font-size:1.2rem;
             width: 100%;
+<<<<<<< HEAD
             
+=======
+           
+>>>>>>> c5a694515b4769007a4958eb0a16157c73b0c6e5
           }
 
     }

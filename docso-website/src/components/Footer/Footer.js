@@ -11,9 +11,9 @@ const Footer = () => {
                 <div className="legal">         
                     <Link to="/termandcondition"><h3 className="ml">Terms of Services</h3></Link>
                     <Link to="/privacypolicy"><h3 className="ml">Privacy Policy</h3></Link>
-                    
+                    <br/>
                 </div>
-                <h3 className="copyright"> &copy; {new Date().getFullYear()} Quartile Technologies. All rights reserved.</h3>
+                <h3 className="ml"> &copy; {new Date().getFullYear()} Quartile Technologies. All rights reserved.</h3>
             </CopyRight>
         </FooterContainer>
     );
@@ -75,11 +75,12 @@ const FooterContainer = styled.div`
 const CopyRight = styled.div`
     background: ${props => props.theme.primary};
     padding: 1rem;
+    color:white;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     .ml{
-        margin-left: 3rem;
+       padding-left:2rem;
+       font-size:1.5rem;
     }
     .legal{
         display: flex;

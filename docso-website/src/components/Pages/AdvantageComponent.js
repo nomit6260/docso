@@ -124,7 +124,11 @@ const Container = styled.div`
    }
    .logo{
        height: 60px;
+<<<<<<< HEAD
        width: 60px;
+=======
+       widht: 60px;
+>>>>>>> c5a694515b4769007a4958eb0a16157c73b0c6e5
        @media (max-width: 600px) {
         width:40px;
         height:40px;
