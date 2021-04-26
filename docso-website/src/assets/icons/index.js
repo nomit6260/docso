@@ -11,7 +11,7 @@ import medicineLogo from'./medicine.png';
 import medLogo from'./medloc.png';
 import pathoLogo from'./microscope.png';
 import report from'./health-check.png';
-import scrnshot1 from'./ss1.png';
+import scrnshot1 from'./drawer.png';
 import NextIcon from "./next"
 import BackIcon from "./back"
 

@@ -1,4 +1,3 @@
-
 import React from 'react'
 import styled from "styled-components"
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -93,6 +92,7 @@ function HomeComponent() {
                                 <img src={Img7} className="sliderimg"></img>
                                 <div className="text-slide">DETAIL SCREEN</div>
                             </div>,
+<<<<<<< HEAD
 
                             <div className="slide-7">
                                 <img src={Img8} className="sliderimg"></img>
@@ -113,6 +113,28 @@ function HomeComponent() {
             />
             </div>
 
+=======
+
+                            <div className="slide-7">
+                                <img src={Img8} className="sliderimg"></img>
+                                <div className="text-slide">DOCTOR AVAILABLE</div>
+                            </div>,
+
+                            <div className="slide-8">
+                                <img src={Img9} className="sliderimg"></img>
+                                <div className="text-slide">NEARBY MEDICAL SHOP</div>
+                            </div>,
+
+                            <div className="slide-9">
+                                <img src={Img10} className="sliderimg"></img>
+                                <div className="text-slide">SIGNUP SCREEN</div>
+                            </div>,
+
+                        ]}
+            />
+            </div>
+
+>>>>>>> c5a694515b4769007a4958eb0a16157c73b0c6e5
                 <br/><br/><br/><br/><br/>
                 <div>
                     {/* <img src={Img2} className="image4"></img> */}
@@ -168,7 +190,10 @@ const Container = styled.div`
         @media (max-width: 600px) {
             width:220px;
             height:auto;
+<<<<<<< HEAD
+=======
 
+>>>>>>> c5a694515b4769007a4958eb0a16157c73b0c6e5
           }
        
       }
@@ -268,7 +293,11 @@ const Container = styled.div`
         @media (max-width: 600px) {                                               
             width:100px;
             height:auto;
+<<<<<<< HEAD
+            margin-top:150px;
+=======
             margin-top:120px;
+>>>>>>> c5a694515b4769007a4958eb0a16157c73b0c6e5
             margin-right:50px;
           }
     }

@@ -2,7 +2,6 @@ import React from 'react'
 import styled from "styled-components"
 import { Card, CardHeading } from "components/Pages/Card"
 import { InfoLogo, HospitalLogo, MedicineLogo, MedLogo, PathoLogo, ReportLogo, Scrnshot1 } from "assets/icons"
-import { Link } from 'react-router-dom';
 import "animate.css/animate.min.css";
 import Img5 from "components/ScreenShot/download-background.jpg"
 
@@ -13,9 +12,13 @@ function FeaturesComponent() {
          width:'100%', backgroundAttachment:'fixed',
           backgroundSize:'100% 100%' }}>
             <h1 className="head">Features</h1>
-
+            <Scrnshot1 className="snapmob"/>
            <div className="outer">
+<<<<<<< HEAD
+           
+=======
         
+>>>>>>> c5a694515b4769007a4958eb0a16157c73b0c6e5
               <div >
           <Card>
                 <CardHeading>
@@ -95,9 +98,13 @@ const Container = styled.div`
         margin-left:-45px;
         display:block;
         @media (max-width: 600px) {
+<<<<<<< HEAD
+           display: none;
+=======
            width:200px;
            height:auto;
            display:none;
+>>>>>>> c5a694515b4769007a4958eb0a16157c73b0c6e5
        }
     }
     .title{
@@ -127,7 +134,6 @@ const Container = styled.div`
         margin-left:20px;
         width: 45%;
         padding: 10px;
-
     }
    
     .logo{
@@ -148,13 +154,28 @@ const Container = styled.div`
             display:block;
        }    
     }
+<<<<<<< HEAD
+    
+=======
     .inner{
         display: flex;
         @media (max-width: 600px) {
             
        }
     }
+>>>>>>> c5a694515b4769007a4958eb0a16157c73b0c6e5
     .second{
         margin-left: none;
+    }
+    .snapmob{
+        display: none;
+        @media (max-width: 600px) {
+            display:block;
+            width: 350px;
+            height: 550px;
+            margin-left: none;
+            
+       } 
+
     }
 `;

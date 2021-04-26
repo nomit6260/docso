@@ -124,7 +124,15 @@ const Container = styled.div`
    }
    .logo{
        height: 60px;
+<<<<<<< HEAD
        width: 60px;
+=======
+<<<<<<< HEAD
+       width: 60px;
+=======
+       widht: 60px;
+>>>>>>> c5a694515b4769007a4958eb0a16157c73b0c6e5
+>>>>>>> 95da77d7b4555c3d328d42e922377d3ec169b414
        @media (max-width: 600px) {
         width:40px;
         height:40px;
@@ -147,4 +155,3 @@ const Container = styled.div`
       }
    }
 `;
-

@@ -110,33 +110,31 @@ function PrivacyPolicyComponent() {
 export default PrivacyPolicyComponent
 
 const Container = styled.div`
-    padding: 8rem; 
-     @media (max-width: 600px) {
+    padding-top: 12rem;
+    padding: 8rem;
+    @media (max-width: 600px) {
         padding:4rem;
+        padding-top:8rem;
       }
 
     .head{
         font-size: 25px;
-        margin-left: 40px;
         color: white;
         @media (max-width: 600px) {
-            text-align: left;
-            font-size:3rem;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
+            text-align: justify;
+            font-size:2.5rem;
+           
+           
           }
     }
     .para{
          font-size: 15px;
         color: black;
-        margin-left: 40px;
         @media (max-width: 600px) {
             text-align: justify;
-            font-size:1.8rem;
+            font-size:1.5rem;
             width: 100%;
-            margin-left: auto;
-            margin-right: auto;
+           
           }
 
     }
