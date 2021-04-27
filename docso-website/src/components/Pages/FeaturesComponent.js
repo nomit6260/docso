@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Card, CardHeading } from "components/Pages/Card"
 import { InfoLogo, HospitalLogo, MedicineLogo, MedLogo, PathoLogo, ReportLogo, Scrnshot1 } from "assets/icons"
 import "animate.css/animate.min.css";
-import Img5 from "components/ScreenShot/download-background.jpg"
+import Img5 from "components/ScreenShot/bg.jpg"
 
 function FeaturesComponent() {
     return (

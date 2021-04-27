@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import { CalenderLogo,PhoneLogo,ClockLogo,BellLogo,AdvantageImage } from "assets/icons"
 import { Link } from 'react-router-dom';
-import Img5 from "components/ScreenShot/download-background.jpg"
+import Img5 from "components/ScreenShot/bg.jpg"
 
  
 function AdvantageComponent() {

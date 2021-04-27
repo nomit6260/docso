@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import Img5 from "components/ScreenShot/download-background.jpg"
+import Img5 from "components/ScreenShot/bg.jpg"
 
 
 function PrivacyPolicyComponent() {

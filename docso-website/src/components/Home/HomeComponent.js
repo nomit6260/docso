@@ -18,7 +18,7 @@ import Img7 from "components/ScreenShot/detail.png"
 import Img8 from "components/ScreenShot/doc-aval.png"
 import Img9 from "components/ScreenShot/med-shop.png"
 import Img10 from "components/ScreenShot/signup.png"
-import Img6 from "components/ScreenShot/download-background.jpg"
+import Img6 from "components/ScreenShot/bg.jpg"
 
 
   

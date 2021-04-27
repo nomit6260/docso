@@ -1,11 +1,16 @@
 import React from 'react'
 import styled from "styled-components"
 import { FaPhoneSquareAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import Img5 from "components/ScreenShot/bg.jpg"
+import { GrayBtn } from "styles/Buttons"
 import { SiGooglemaps } from "react-icons/si";
 
 function ContactUsComponent() {
     return (
-        <Container>
+        <Container style={{backgroundImage: `url(${Img5})`,
+        backgroundRepeat: 'no-repeat',
+         width:'100%', backgroundAttachment:'fixed',
+          backgroundSize:'100% 100%' }}>
             <h1 className="head">Contact Us</h1>
             <h1 className="head1">Fill this form to send message to us</h1><br/>
             <form>
@@ -27,7 +32,7 @@ function ContactUsComponent() {
             <span className="info"><FaEnvelope className="logo" />&nbsp;&nbsp;&nbsp;&nbsp;info@quartilelabs.com</span><br/><br/>
             <span className="info"><FaPhoneSquareAlt className="logo" />&nbsp;&nbsp;&nbsp;&nbsp;+918871384916</span><br/><br/>
             <span className="info"><SiGooglemaps className="logo" />&nbsp;&nbsp;&nbsp;&nbsp;Smriti Nagar, CG, IN</span><br/><br/>
-            </div><br/><br/>
+            </div>
         </Container>
     )
 }
@@ -62,7 +67,7 @@ const Container = styled.div`
         height:3rem;
         @media (max-width: 600px) {
             width: 75%;
-            height:4rem;
+            height:3.45rem;
         }
     }
     textarea{
@@ -92,12 +97,12 @@ const Container = styled.div`
         margin-top:5px;
         top:20%;
         @media (max-width: 600px) {
-            position:none;
-            border-top: 2px solid gray;
+            position:static;
+            border-top: 2px solid black;
             border-left: none;
-            left: 0%;
-            top: 72%;
-            width:100%;
+            margin-top:20px;
+            width:90%;
+            top:0%;
         }
         
       }
@@ -106,8 +111,8 @@ const Container = styled.div`
           font-size:2.2rem;
           color:black;
           @media (max-width: 600px) {
-            margin-bottom:-25px;
-            margin-top:10px;
+            margin-bottom:-20px;
+            margin-top:30px;
         }
         }
           
